@@ -5,7 +5,7 @@ const mentorStudentPairsWB = xlsx.readFile('./data/initial/mentor-students_pairs
 // const mentorScoreWB = xlsx.readFile('./data/initial/mentor_score.xlsx');
 // const tasksListWB = xlsx.readFile('./data/initial/tasks.xlsx');
 
-const mentorStudentPairs = mentorStudentPairsWB.Sheets['second_name-to_github_account'];
+const mentorGithub = mentorStudentPairsWB.Sheets['second_name-to_github_account'];
 
 const getNumberOfRows = (sheet) => {
   const initial = +sheet['!ref']
@@ -19,22 +19,29 @@ const getNumberOfRows = (sheet) => {
 };
 
 const fieldMapping = {
-  pairs: {
+  mentorGithub: {
     name: 'A',
     surname: 'B',
     city: 'C',
     count: 'D',
     github: 'E',
   },
+  pairs: {
+    interviewer: 'A',
+    student: 'B',
+  },
 };
 
 const getMentor = (sheet, currentRow) => {
+  const name = sheet[fieldMapping.mentorGithub.name + currentRow].v;
+  const surname = sheet[fieldMapping.mentorGithub.surname + currentRow].v;
   const worker = {
-    name: sheet[fieldMapping.pairs.name + currentRow].v,
-    surname: sheet[fieldMapping.pairs.surname + currentRow].v,
-    city: sheet[fieldMapping.pairs.city + currentRow].v,
-    count: sheet[fieldMapping.pairs.count + currentRow].v,
-    github: sheet[fieldMapping.pairs.github + currentRow].v,
+    name,
+    surname,
+    fullName: `${name.trim().toLowerCase()} ${surname.trim().toLowerCase()}`,
+    city: sheet[fieldMapping.mentorGithub.city + currentRow].v,
+    count: sheet[fieldMapping.mentorGithub.count + currentRow].v,
+    github: sheet[fieldMapping.mentorGithub.github + currentRow].v,
   };
 
   return worker;
@@ -51,7 +58,7 @@ const getMentors = (sheet, max) => {
   return rows;
 };
 
-const pairs = getMentors(mentorStudentPairs, getNumberOfRows(mentorStudentPairs));
+const pairs = getMentors(mentorGithub, getNumberOfRows(mentorGithub));
 const pairsJSON = JSON.stringify(pairs, 0, 2);
 
 fs.writeFile('./data/final/pairs.json', pairsJSON, 'utf8', () => {
