@@ -30,6 +30,11 @@ const fieldMapping = {
     interviewer: 'A',
     student: 'B',
   },
+  tasks: {
+    taskName: 'A',
+    link: 'B',
+    status: 'C',
+  },
 };
 
 const getMentor = (sheet, currentRow) => {
@@ -53,16 +58,16 @@ const getMentor = (sheet, currentRow) => {
 
 const getMentors = (sheet, max) => {
   let curRow = 2;
-  const rows = [];
+  const rows = { mentors: [] };
   while (curRow <= max) {
-    rows.push(getMentor(sheet, curRow));
+    rows.mentors.push(getMentor(sheet, curRow));
     curRow += 1;
   }
 
   return rows;
 };
 
-const mentors = getMentors(mentorGithub, getNumberOfRows(mentorGithub));
+const data = getMentors(mentorGithub, getNumberOfRows(mentorGithub));
 
 const studentGithub = mentorStudentPairsWB.Sheets.pairs;
 
@@ -89,17 +94,15 @@ const getPairs = (sheet, max) => {
 const pairs = getPairs(studentGithub, getNumberOfRows(studentGithub));
 
 pairs.forEach((pair) => {
-  const mentor = mentors.find(mntr => mntr.fullName === pair.interviewer);
+  const mentor = data.mentors.find(mntr => mntr.fullName === pair.interviewer);
 
   if (!mentor) return;
 
-  mentor.students.push(String(pair.student));
+  mentor.students.push({ github: String(pair.student).trim().toLowerCase() });
 });
 
-const mentorStudentPairs = mentors.filter(r => r);
+const pairsJSON = JSON.stringify(data, 0, 2);
 
-const pairsJSON = JSON.stringify(mentorStudentPairs, 0, 2);
-
-fs.writeFile('./data/final/pairs.json', pairsJSON, 'utf8', () => {
-  console.log('Writing is done!');
+fs.writeFile('./data/data.json', pairsJSON, 'utf8', () => {
+  console.log('Writing is done!'); // eslint-disable-line no-console
 });
