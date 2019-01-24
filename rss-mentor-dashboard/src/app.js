@@ -3,9 +3,11 @@ const xlsx = require('xlsx');
 
 const mentorStudentPairsWB = xlsx.readFile('./data/initial/mentor-students_pairs.xlsx');
 // const mentorScoreWB = xlsx.readFile('./data/initial/mentor_score.xlsx');
-// const tasksListWB = xlsx.readFile('./data/initial/tasks.xlsx');
+const tasksListWB = xlsx.readFile('./data/initial/tasks.xlsx');
 
 const mentorGithub = mentorStudentPairsWB.Sheets['second_name-to_github_account'];
+const studentGithub = mentorStudentPairsWB.Sheets.pairs;
+const tasksList = tasksListWB.Sheets.Sheet1;
 
 const getNumberOfRows = (sheet) => {
   const initial = +sheet['!ref']
@@ -69,8 +71,6 @@ const getMentors = (sheet, max) => {
 
 const data = getMentors(mentorGithub, getNumberOfRows(mentorGithub));
 
-const studentGithub = mentorStudentPairsWB.Sheets.pairs;
-
 const getPair = (sheet, currentRow) => {
   const pair = {
     interviewer: sheet[fieldMapping.pairs.interviewer + currentRow].v.trim().toLowerCase(),
@@ -98,7 +98,48 @@ pairs.forEach((pair) => {
 
   if (!mentor) return;
 
-  mentor.students.push({ github: String(pair.student).trim().toLowerCase() });
+  mentor.students.push({ github: String(pair.student).trim().toLowerCase(), tasks: [] });
+});
+
+const getTask = (sheet, currentRow) => {
+  const link = sheet[fieldMapping.tasks.link + currentRow];
+  const task = {
+    taskName: sheet[fieldMapping.tasks.taskName + currentRow].v
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-zA-Z\d\s:]|\s+/gm, ''),
+    link: link ? link.v : 'no link',
+    status: sheet[fieldMapping.tasks.status + currentRow].v.trim().toLowerCase(),
+  };
+
+  return task;
+};
+
+const getTasks = (sheet, max) => {
+  let curRow = 2;
+  const rows = [];
+  while (curRow <= max) {
+    rows.push(getTask(sheet, curRow));
+    curRow += 1;
+  }
+
+  return rows;
+};
+
+const tasks = getTasks(tasksList, getNumberOfRows(tasksList));
+
+data.tasks = [];
+const taskTemplate = [];
+
+tasks.forEach((task) => {
+  data.tasks.push(task);
+  taskTemplate.push({ taskName: task.taskName, status: null });
+});
+
+data.mentors.forEach((mentor) => {
+  mentor.students.forEach((student) => {
+    student.tasks.push(...taskTemplate);
+  });
 });
 
 const pairsJSON = JSON.stringify(data, 0, 2);
