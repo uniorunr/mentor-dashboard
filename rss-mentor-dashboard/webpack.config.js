@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/app.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.bundle.js',
@@ -9,8 +9,9 @@ module.exports = {
   },
   module: {
     rules: [
+      { enforce: 'pre', test: /\.js?x$/, loader: 'eslint-loader' },
       {
-        test: /\.js$/,
+        test: /\.js?x$/,
         exclude: /(node_modules)/,
         loader: 'babel-loader',
         query: {
@@ -18,6 +19,9 @@ module.exports = {
         },
       },
     ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
   watch: true,
   mode: 'development',
