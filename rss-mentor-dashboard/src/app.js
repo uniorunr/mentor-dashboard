@@ -2,12 +2,13 @@ const fs = require('fs');
 const xlsx = require('xlsx');
 
 const mentorStudentPairsWB = xlsx.readFile('./data/initial/mentor-students_pairs.xlsx');
-// const mentorScoreWB = xlsx.readFile('./data/initial/mentor_score.xlsx');
+const mentorScoreWB = xlsx.readFile('./data/initial/mentor_score.xlsx');
 const tasksListWB = xlsx.readFile('./data/initial/tasks.xlsx');
 
 const mentorGithub = mentorStudentPairsWB.Sheets['second_name-to_github_account'];
 const studentGithub = mentorStudentPairsWB.Sheets.pairs;
 const tasksList = tasksListWB.Sheets.Sheet1;
+const mentorScore = mentorScoreWB.Sheets['Form Responses 1'];
 
 const getNumberOfRows = (sheet) => {
   const initial = +sheet['!ref']
@@ -37,6 +38,11 @@ const fieldMapping = {
     link: 'B',
     status: 'C',
   },
+  score: {
+    mentor: 'B',
+    student: 'C',
+    task: 'D',
+  },
 };
 
 const getMentor = (sheet, currentRow) => {
@@ -51,7 +57,7 @@ const getMentor = (sheet, currentRow) => {
     city: sheet[fieldMapping.mentorGithub.city + currentRow].v,
     count: sheet[fieldMapping.mentorGithub.count + currentRow].v,
     github,
-    githubUsername: github.replace(/^.*:\/\/.*\//, '').replace('/', '').toLowerCase(),
+    githubUsername: github.replace(/^.*:\/\/github\.com\//, '').replace('/', '').toLowerCase(),
     students: [],
   };
 
@@ -129,16 +135,79 @@ const getTasks = (sheet, max) => {
 const tasks = getTasks(tasksList, getNumberOfRows(tasksList));
 
 data.tasks = [];
-const taskTemplate = [];
 
 tasks.forEach((task) => {
   data.tasks.push(task);
-  taskTemplate.push({ taskName: task.taskName, status: null });
 });
 
 data.mentors.forEach((mentor) => {
   mentor.students.forEach((student) => {
-    student.tasks.push(...taskTemplate);
+    data.tasks.forEach((task) => {
+      student.tasks.push({ taskName: task.taskName, status: null });
+    });
+  });
+});
+
+const getScore = (sheet, currentRow) => {
+  const mentor = sheet[fieldMapping.score.mentor + currentRow].v;
+  const student = sheet[fieldMapping.score.student + currentRow].v;
+  const task = sheet[fieldMapping.score.task + currentRow].v;
+
+  const score = {
+    task: task.trim().toLowerCase().replace(/[^a-zA-Z\d\s:]|\s+/gm, ''),
+    mentor: mentor.trim().replace(/^.*:\/\/github\.com\//, '').replace('/', '').toLowerCase(),
+    student: student.trim()
+      .replace(/^.*:\/\/github\.com\//, '')
+      .replace('/', '')
+      .replace('rolling-scopes-school', '')
+      .replace(/-20\d{2}\w{1}\d{1}/, '')
+      .toLowerCase(),
+  };
+
+  return score;
+};
+
+const getScores = (sheet, max) => {
+  let curRow = 2;
+  const rows = [];
+  while (curRow <= max) {
+    rows.push(getScore(sheet, curRow));
+    curRow += 1;
+  }
+
+  return rows;
+};
+
+const score = getScores(mentorScore, getNumberOfRows(mentorScore));
+
+const checkedTasks = {};
+
+tasks.forEach((task) => {
+  checkedTasks[`${task.taskName}`] = {
+    students: [],
+    mentors: [],
+  };
+});
+
+score.forEach((item) => {
+  if (!checkedTasks[`${item.task}`]) {
+    checkedTasks[`${item.task}`] = { students: [], mentors: [] };
+  }
+  checkedTasks[`${item.task}`].students.push(item.student);
+  checkedTasks[`${item.task}`].mentors.push(item.mentor);
+});
+
+data.mentors.forEach((mentor) => {
+  mentor.students.forEach((student) => {
+    student.tasks.forEach((task) => {
+      if (checkedTasks[`${task.taskName}`].students.includes(student.github)) {
+        Object.defineProperties(task, {
+          status: {
+            value: 'checked',
+          },
+        });
+      }
+    });
   });
 });
 
