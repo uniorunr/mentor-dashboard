@@ -4,7 +4,7 @@
   "description": "RSS Mentor Dashboard",
   "private": true,
   "scripts": {
-    "process": "node ./src/app.js",
+    "process": "node ./scripts/makeJSON.js",
     "test": "jest",
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development --open",
