@@ -1,17 +1,12 @@
 module.exports = {
-  extends: 'airbnb',
-  env: {
-    browser: true,
-    jest: true,
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "jest": true,
   },
-  plugins: ['react', 'jsx-a11y', 'import'],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-  parser: 'babel-eslint',
-  rules: {
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-  },
+  "rules": {
+    "react/prefer-stateless-function": "off",
+    "react/prop-types": ["error", { "ignore": ["name", "greet"] }],
+    "react/jsx-one-expression-per-line": "off"
+  }
 };
