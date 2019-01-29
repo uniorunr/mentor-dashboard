@@ -38,6 +38,7 @@
     "file-loader": "^2.0.0",
     "jest": "^23.6.0",
     "jsdom": "^13.1.0",
+    "react-test-renderer": "^16.7.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2",
@@ -45,6 +46,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
+    "@babel/runtime": "^7.3.1",
     "babel-polyfill": "^6.26.0",
     "es6-promise": "^4.2.5",
     "express": "^4.16.4",
