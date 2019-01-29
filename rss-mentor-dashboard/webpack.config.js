@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -30,6 +31,10 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('style.css'),
+    new HtmlPlugin({
+      template: path.join(__dirname, '/src/index.html'),
+      favicon: path.join(__dirname, '/src/favicon.png'),
+    }),
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
