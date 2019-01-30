@@ -70,6 +70,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
+    "react-select": "^2.3.0",
     "regenerator-runtime": "^0.13.1",
     "xlsx": "^0.14.1"
   },
