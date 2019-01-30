@@ -1,18 +1,14 @@
 import React from 'react';
-import NavBarItem from './NavBarItems/NavBarItem';
+import Logo from './Logo/Logo';
+import UserPicker from './UserPicker/UserPicker';
 import './NavBar.css';
+import mentorsList from '../../utils/parseJSON';
 
 const NavBar = () => (
   <div className="navbar-container">
-    <div className="header-logo">
-      <h1>Director</h1>
-    </div>
-    <nav>
-      <ul>
-        <NavBarItem link="/" name="Home" />
-        <NavBarItem link="/about" name="About" />
-        <NavBarItem link="/users" name="Users" />
-      </ul>
+    <nav className="navbar">
+      <Logo link="/" brandName="RSS MD" />
+      <UserPicker placeholder="github account" options={mentorsList} />
     </nav>
   </div>
 );

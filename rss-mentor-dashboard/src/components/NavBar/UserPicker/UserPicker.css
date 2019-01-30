@@ -1,0 +1,32 @@
+.user-picker-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-picker-container input {
+  padding: 2% 4%;
+  border: solid #777 1px;
+  outline: none;
+  border-radius: 2px;
+}
+    
+.user-picker-container input:focus {
+  border: solid #000 2px;
+}
+
+.react-select-container .react-select__control {
+  border: solid #000 1px;
+  box-shadow: none;
+}
+
+.react-select-container .react-select__control:hover {
+  border: solid #000 1px;
+}
+
+.react-select-container .react-select__control.react-select__control--is-focused {
+  border: solid #000 2px;
+}
+
+.react-select__single-value, .react-select__placeholder {
+  font-size: 14px;
+}
