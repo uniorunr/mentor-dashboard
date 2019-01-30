@@ -4,9 +4,9 @@ module.exports = {
     "browser": true,
     "jest": true,
   },
+  "parser": 'babel-eslint',
   "rules": {
     "react/prefer-stateless-function": "off",
-    "react/prop-types": ["error", { "ignore": ["name", "greet"] }],
     "react/jsx-one-expression-per-line": "off",
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
   }
