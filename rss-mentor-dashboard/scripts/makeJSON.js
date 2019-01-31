@@ -110,7 +110,8 @@ pairs.forEach((pair) => {
 const getTask = (sheet, currentRow) => {
   const link = sheet[fieldMapping.tasks.link + currentRow];
   const task = {
-    taskName: sheet[fieldMapping.tasks.taskName + currentRow].v
+    taskName: sheet[fieldMapping.tasks.taskName + currentRow].v,
+    normalizedTaskName: sheet[fieldMapping.tasks.taskName + currentRow].v
       .trim()
       .toLowerCase()
       .replace(/[^a-zA-Z\d\s:]|\s+/gm, ''),
@@ -143,7 +144,11 @@ tasks.forEach((task) => {
 data.mentors.forEach((mentor) => {
   mentor.students.forEach((student) => {
     data.tasks.forEach((task) => {
-      student.tasks.push({ taskName: task.taskName, status: null });
+      student.tasks.push({
+        taskName: task.taskName,
+        normalizedTaskName: task.normalizedTaskName,
+        status: null,
+      });
     });
   });
 });
