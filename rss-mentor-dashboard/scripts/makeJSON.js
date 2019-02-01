@@ -188,7 +188,7 @@ const score = getScores(mentorScore, getNumberOfRows(mentorScore));
 const checkedTasks = {};
 
 tasks.forEach((task) => {
-  checkedTasks[`${task.taskName}`] = {
+  checkedTasks[`${task.normalizedTaskName}`] = {
     students: [],
     mentors: [],
   };
@@ -205,7 +205,7 @@ score.forEach((item) => {
 data.mentors.forEach((mentor) => {
   mentor.students.forEach((student) => {
     student.tasks.forEach((task) => {
-      if (checkedTasks[`${task.taskName}`].students.includes(student.github)) {
+      if (checkedTasks[`${task.normalizedTaskName}`].students.includes(student.github)) {
         Object.defineProperties(task, {
           status: {
             value: 'checked',
