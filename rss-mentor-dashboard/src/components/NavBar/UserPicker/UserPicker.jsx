@@ -17,7 +17,9 @@ class UserPicker extends Component {
   };
 
   handleChange = (selectedOption) => {
+    const { handleInput } = this.props;
     this.setState({ selectedOption });
+    handleInput(selectedOption.label);
   }
 
   render() {
@@ -47,6 +49,7 @@ UserPicker.propTypes = {
       label: PropTypes.string,
     }),
   ).isRequired,
+  handleInput: PropTypes.func.isRequired,
 };
 
 export default UserPicker;

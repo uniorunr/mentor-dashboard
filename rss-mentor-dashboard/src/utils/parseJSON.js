@@ -21,19 +21,14 @@ mentorsList.sort((a, b) => {
   return 0;
 });
 
-const studentsList = [];
-
-data.mentors[1].students.forEach((element) => {
-  studentsList.push(element.github);
-});
-
 const tasksList = [];
 
 data.tasks.forEach((element) => {
-  tasksList.push(element.taskName);
+  tasksList.push({
+    taskName: element.taskName,
+    status: element.status,
+  });
 });
-
-const dataForDashboard = [];
 
 const getDataByMentor = (mentor, dataObj) => {
   const currMentor = dataObj.mentors.filter(ment => ment.githubUsername === mentor)[0];
@@ -53,15 +48,15 @@ const getDataByMentor = (mentor, dataObj) => {
     });
   });
 
-  return finalData;
+  const studentsList = [];
+
+  currMentor.students.forEach((element) => {
+    studentsList.push(element.github);
+  });
+
+  return { finalData, studentsList };
 };
 
-const test = getDataByMentor('alex-zayats', data);
-
-data.mentors[1].students.forEach((element) => {
-  dataForDashboard.push(element.github);
-});
-
 export {
-  mentorsList, studentsList, tasksList, test,
+  mentorsList, tasksList, getDataByMentor, data,
 };

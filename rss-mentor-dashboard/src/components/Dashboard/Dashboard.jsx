@@ -8,7 +8,8 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import { studentsList, test } from '../../utils/parseJSON';
+import { getDataByMentor, data, tasksList } from '../../utils/parseJSON';
+import getFormatOfCell from '../../utils/formatting';
 
 const styles = theme => ({
   root: {
@@ -21,9 +22,9 @@ const styles = theme => ({
   },
 });
 
-function SimpleTable(props) {
-  const { classes } = props;
-
+const SimpleTable = (props) => {
+  const { classes, mentor } = props;
+  const { finalData, studentsList } = getDataByMentor(mentor, data);
   return (
     <div className="dashboard-container">
       <Paper className={classes.root}>
@@ -37,13 +38,15 @@ function SimpleTable(props) {
             </TableRow>
           </TableHead>
           <TableBody>
-            {test.map(row => (
+            {finalData.map(row => (
               <TableRow key={row.task}>
                 <TableCell component="th" scope="row">
                   {row.task}
                 </TableCell>
                 {studentsList.map((student, i) => (
-                  <TableCell align="right" key={student}>{row[`${studentsList[i]}`]}</TableCell>
+                  <TableCell align="right" key={student}>
+                    {getFormatOfCell(row[`${studentsList[i]}`], row.task, tasksList)}
+                  </TableCell>
                 ))}
               </TableRow>
             ))}
@@ -52,10 +55,11 @@ function SimpleTable(props) {
       </Paper>
     </div>
   );
-}
+};
 
 SimpleTable.propTypes = {
   classes: PropTypes.instanceOf(Object).isRequired,
+  mentor: PropTypes.string.isRequired,
 };
 
 export default withStyles(styles)(SimpleTable);
