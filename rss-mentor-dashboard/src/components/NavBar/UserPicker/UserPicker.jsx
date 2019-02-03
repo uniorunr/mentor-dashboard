@@ -16,15 +16,24 @@ class UserPicker extends Component {
     selectedOption: null,
   };
 
+  componentDidMount = () => {
+    const mentorFromStorage = localStorage.getItem('selectedMentor');
+    this.setState({
+      selectedOption: { value: mentorFromStorage, label: mentorFromStorage },
+    });
+  }
+
   handleChange = (selectedOption) => {
     const { handleInput } = this.props;
     this.setState({ selectedOption });
     handleInput(selectedOption.label);
+    localStorage.setItem('selectedMentor', selectedOption.label);
   }
 
   render() {
     const { placeholder, options } = this.props;
     const { selectedOption } = this.state;
+
     return (
       <Fragment>
         <Select

@@ -9,21 +9,30 @@ class App extends Component {
     mentor: null,
   };
 
-handleInput = (mentorInput) => {
-  this.setState({
-    mentor: mentorInput,
-  });
-}
+  componentDidMount = () => {
+    const mentorFromStorage = localStorage.getItem('selectedMentor');
+    if (mentorFromStorage) {
+      this.setState({
+        mentor: mentorFromStorage,
+      });
+    }
+  }
 
-render() {
-  const { mentor } = this.state;
-  return (
-    <Fragment>
-      <NavBar handleInput={this.handleInput} />
-      {mentor ? <Table mentor={mentor} /> : null}
-    </Fragment>
-  );
-}
+  handleInput = (mentorInput) => {
+    this.setState({
+      mentor: mentorInput,
+    });
+  }
+
+  render() {
+    const { mentor } = this.state;
+    return (
+      <Fragment>
+        <NavBar handleInput={this.handleInput} />
+        {mentor ? <Table mentor={mentor} /> : null}
+      </Fragment>
+    );
+  }
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
