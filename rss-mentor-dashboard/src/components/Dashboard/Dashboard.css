@@ -3,3 +3,23 @@
   justify-content: center;
   align-items: center;
 }
+
+.cell-bg-green {
+  background-color: #b9f6ca;
+}
+
+.cell-bg-pink {
+  background-color: #fce4ec;
+}
+
+.cell-bg-yellow {
+  background-color: #ffff8d;
+}
+
+.cell-bg-red {
+  background-color: #ff8a80;
+}
+
+.cell-bg-grey {
+  background-color: #bdbdbd;
+}

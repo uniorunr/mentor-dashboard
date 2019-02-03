@@ -25,4 +25,27 @@ const getFormatOfCell = (score, task, taskStatuses) => {
   return cellValue;
 };
 
-export default getFormatOfCell;
+const cellFormatting = (cellValue) => {
+  let format = null;
+  switch (cellValue) {
+    case 'Done':
+      format = 'cell-bg-green';
+      break;
+    case 'Checking':
+      format = 'cell-bg-pink';
+      break;
+    case 'In Progress':
+      format = 'cell-bg-yellow';
+      break;
+    case 'ToDo':
+      format = 'cell-bg-grey';
+      break;
+    case 'No Solution':
+      format = 'cell-bg-red';
+      break;
+    default: format = new TypeError('case not found');
+  }
+  return format;
+};
+
+export { getFormatOfCell, cellFormatting };

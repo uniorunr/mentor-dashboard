@@ -9,7 +9,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { getDataByMentor, data, tasksList } from '../../utils/parseJSON';
-import getFormatOfCell from '../../utils/formatting';
+import { getFormatOfCell, cellFormatting } from '../../utils/formatting';
 
 const styles = theme => ({
   root: {
@@ -44,7 +44,11 @@ const SimpleTable = (props) => {
                   {row.task}
                 </TableCell>
                 {studentsList.map((student, i) => (
-                  <TableCell align="right" key={student}>
+                  <TableCell
+                    align="right"
+                    key={student}
+                    className={cellFormatting(getFormatOfCell(row[`${studentsList[i]}`], row.task, tasksList))}
+                  >
                     {getFormatOfCell(row[`${studentsList[i]}`], row.task, tasksList)}
                   </TableCell>
                 ))}
