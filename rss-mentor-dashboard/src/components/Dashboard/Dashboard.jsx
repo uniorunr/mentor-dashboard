@@ -47,7 +47,9 @@ const SimpleTable = (props) => {
                   <TableCell
                     align="right"
                     key={student}
-                    className={cellFormatting(getFormatOfCell(row[`${studentsList[i]}`], row.task, tasksList))}
+                    className={cellFormatting(getFormatOfCell(row[`${studentsList[i]}`],
+                      row.task,
+                      tasksList))}
                   >
                     {getFormatOfCell(row[`${studentsList[i]}`], row.task, tasksList)}
                   </TableCell>
