@@ -5,7 +5,7 @@ const getFormatOfCell = (score, task, taskStatuses) => {
     case 'checked':
       if (score) {
         cellValue = 'Done';
-      } else cellValue = 'No Solution';
+      } else cellValue = 'Checked';
       break;
     case 'checking':
       if (score) {
@@ -40,7 +40,7 @@ const cellFormatting = (cellValue) => {
     case 'ToDo':
       format = 'cell-bg-grey';
       break;
-    case 'No Solution':
+    case 'Checked':
       format = 'cell-bg-red';
       break;
     default: format = new TypeError('case not found');
