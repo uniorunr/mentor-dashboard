@@ -14,7 +14,7 @@ import { getFormatOfCell, cellFormatting } from '../../utils/formatting';
 const styles = theme => ({
   root: {
     width: '90%',
-    marginTop: theme.spacing.unit * 3,
+    marginTop: theme.spacing.unit / 2,
     overflowX: 'auto',
   },
   table: {
@@ -33,7 +33,7 @@ const SimpleTable = (props) => {
             <TableRow>
               <TableCell>Tasks</TableCell>
               {studentsList.map(student => (
-                <TableCell key={student} align="right">{student}</TableCell>
+                <TableCell key={student} align="center">{student}</TableCell>
               ))}
             </TableRow>
           </TableHead>
@@ -45,7 +45,7 @@ const SimpleTable = (props) => {
                 </TableCell>
                 {studentsList.map((student, i) => (
                   <TableCell
-                    align="right"
+                    align="center"
                     key={student}
                     className={cellFormatting(getFormatOfCell(row[`${studentsList[i]}`],
                       row.task,
