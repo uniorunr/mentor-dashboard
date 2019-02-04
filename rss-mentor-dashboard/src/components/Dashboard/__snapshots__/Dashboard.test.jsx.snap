@@ -1,0 +1,378 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="dashboard-container"
+>
+  <div
+    className="MuiPaper-root-3 MuiPaper-elevation2-7 MuiPaper-rounded-4 SimpleTable-root-1"
+  >
+    <table
+      className="MuiTable-root-30 SimpleTable-table-2"
+    >
+      <thead
+        className="MuiTableHead-root-31"
+      >
+        <tr
+          className="MuiTableRow-root-32 MuiTableRow-head-35"
+        >
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-head-38"
+            scope="col"
+          >
+            Tasks
+          </th>
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-head-38 MuiTableCell-alignCenter-46"
+            scope="col"
+          >
+            uniorunr
+          </th>
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-head-38 MuiTableCell-alignCenter-46"
+            scope="col"
+          >
+            alexeydavydov
+          </th>
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-head-38 MuiTableCell-alignCenter-46"
+            scope="col"
+          >
+            melllivoracapensis
+          </th>
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-head-38 MuiTableCell-alignCenter-46"
+            scope="col"
+          >
+            soulshaker
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className="MuiTableBody-root-49"
+      >
+        <tr
+          className="MuiTableRow-root-32"
+        >
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39"
+            scope="row"
+          >
+            Code Jam "CV"
+          </th>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-red"
+          >
+            Checked
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-red"
+          >
+            Checked
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-red"
+          >
+            Checked
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-red"
+          >
+            Checked
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root-32"
+        >
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39"
+            scope="row"
+          >
+            Code Jam "CoreJS" 
+          </th>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-red"
+          >
+            Checked
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-red"
+          >
+            Checked
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-red"
+          >
+            Checked
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-red"
+          >
+            Checked
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root-32"
+        >
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39"
+            scope="row"
+          >
+            Code Jam "DOM, DOM Events" 
+          </th>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-green"
+          >
+            Done
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-red"
+          >
+            Checked
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-green"
+          >
+            Done
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-green"
+          >
+            Done
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root-32"
+        >
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39"
+            scope="row"
+          >
+            Markup #1
+          </th>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-green"
+          >
+            Done
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-pink"
+          >
+            Checking
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-green"
+          >
+            Done
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-green"
+          >
+            Done
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root-32"
+        >
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39"
+            scope="row"
+          >
+            RS Activist - 
+          </th>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-yellow"
+          >
+            In Progress
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-yellow"
+          >
+            In Progress
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-yellow"
+          >
+            In Progress
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-yellow"
+          >
+            In Progress
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root-32"
+        >
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39"
+            scope="row"
+          >
+            YouTube
+          </th>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-pink"
+          >
+            Checking
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-pink"
+          >
+            Checking
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-pink"
+          >
+            Checking
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-pink"
+          >
+            Checking
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root-32"
+        >
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39"
+            scope="row"
+          >
+            CodeJam "Scoreboard"
+          </th>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-pink"
+          >
+            Checking
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-pink"
+          >
+            Checking
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-pink"
+          >
+            Checking
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-pink"
+          >
+            Checking
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root-32"
+        >
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39"
+            scope="row"
+          >
+            Game
+          </th>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-yellow"
+          >
+            In Progress
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-yellow"
+          >
+            In Progress
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-yellow"
+          >
+            In Progress
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-yellow"
+          >
+            In Progress
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root-32"
+        >
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39"
+            scope="row"
+          >
+            Course work
+          </th>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-grey"
+          >
+            ToDo
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-grey"
+          >
+            ToDo
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-grey"
+          >
+            ToDo
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root-37 MuiTableCell-body-39 MuiTableCell-alignCenter-46 cell-bg-grey"
+          >
+            ToDo
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

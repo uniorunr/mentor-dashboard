@@ -1,16 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import NavBar from './NavBar';
-
-const handleInput = (mentorInput) => {
-  this.setState({
-    mentor: mentorInput,
-  });
-};
+import Table from './Dashboard';
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<NavBar handleInput={handleInput} />)
+    .create(<Table mentor="alex-zayats" />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
