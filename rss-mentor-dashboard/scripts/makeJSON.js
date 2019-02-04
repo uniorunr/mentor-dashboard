@@ -66,7 +66,7 @@ const getMentor = (sheet, currentRow) => {
 
 const getMentors = (sheet, max) => {
   let curRow = 2;
-  const rows = { mentors: [] };
+  const rows = { mentors: [], tasks: [] };
   while (curRow <= max) {
     rows.mentors.push(getMentor(sheet, curRow));
     curRow += 1;
@@ -99,13 +99,17 @@ const getPairs = (sheet, max) => {
 
 const pairs = getPairs(studentGithub, getNumberOfRows(studentGithub));
 
-pairs.forEach((pair) => {
-  const mentor = data.mentors.find(mntr => mntr.fullName === pair.interviewer);
+const mergePairsAndMentors = (pairsArray, mentorsArray) => {
+  pairsArray.forEach((pair) => {
+    const mentor = mentorsArray.find(mntr => mntr.fullName === pair.interviewer);
 
-  if (!mentor) return;
+    if (!mentor) return;
 
-  mentor.students.push({ github: String(pair.student).trim().toLowerCase(), tasks: [] });
-});
+    mentor.students.push({ github: String(pair.student).trim().toLowerCase(), tasks: [] });
+  });
+};
+
+mergePairsAndMentors(pairs, data.mentors);
 
 const getTask = (sheet, currentRow) => {
   const link = sheet[fieldMapping.tasks.link + currentRow];
@@ -135,23 +139,25 @@ const getTasks = (sheet, max) => {
 
 const tasks = getTasks(tasksList, getNumberOfRows(tasksList));
 
-data.tasks = [];
+const mergeTasksAndMainDataObject = (tasksArray, mainDataObj) => {
+  tasksArray.forEach((task) => {
+    mainDataObj.tasks.push(task);
+  });
 
-tasks.forEach((task) => {
-  data.tasks.push(task);
-});
-
-data.mentors.forEach((mentor) => {
-  mentor.students.forEach((student) => {
-    data.tasks.forEach((task) => {
-      student.tasks.push({
-        taskName: task.taskName,
-        normalizedTaskName: task.normalizedTaskName,
-        status: null,
+  mainDataObj.mentors.forEach((mentor) => {
+    mentor.students.forEach((student) => {
+      mainDataObj.tasks.forEach((task) => {
+        student.tasks.push({
+          taskName: task.taskName,
+          normalizedTaskName: task.normalizedTaskName,
+          status: null,
+        });
       });
     });
   });
-});
+};
+
+mergeTasksAndMainDataObject(tasks, data);
 
 const getScore = (sheet, currentRow) => {
   const mentor = sheet[fieldMapping.score.mentor + currentRow].v;
@@ -185,39 +191,63 @@ const getScores = (sheet, max) => {
 
 const score = getScores(mentorScore, getNumberOfRows(mentorScore));
 
-const checkedTasks = {};
+const addTaskStatus = (taskArr, scoreArr, mainDataObj) => {
+  const checkedTasks = {};
 
-tasks.forEach((task) => {
-  checkedTasks[`${task.normalizedTaskName}`] = {
-    students: [],
-    mentors: [],
-  };
-});
+  taskArr.forEach((task) => {
+    checkedTasks[`${task.normalizedTaskName}`] = {
+      students: [],
+      mentors: [],
+    };
+  });
 
-score.forEach((item) => {
-  if (!checkedTasks[`${item.task}`]) {
-    checkedTasks[`${item.task}`] = { students: [], mentors: [] };
-  }
-  checkedTasks[`${item.task}`].students.push(item.student);
-  checkedTasks[`${item.task}`].mentors.push(item.mentor);
-});
+  scoreArr.forEach((item) => {
+    if (!checkedTasks[`${item.task}`]) {
+      checkedTasks[`${item.task}`] = { students: [], mentors: [] };
+    }
+    checkedTasks[`${item.task}`].students.push(item.student);
+    checkedTasks[`${item.task}`].mentors.push(item.mentor);
+  });
 
-data.mentors.forEach((mentor) => {
-  mentor.students.forEach((student) => {
-    student.tasks.forEach((task) => {
-      if (checkedTasks[`${task.normalizedTaskName}`].students.includes(student.github)) {
-        Object.defineProperties(task, {
-          status: {
-            value: 'checked',
-          },
-        });
-      }
+  mainDataObj.mentors.forEach((mentor) => {
+    mentor.students.forEach((student) => {
+      student.tasks.forEach((task) => {
+        if (checkedTasks[`${task.normalizedTaskName}`].students.includes(student.github)) {
+          Object.defineProperties(task, {
+            status: {
+              value: 'checked',
+            },
+          });
+        }
+      });
     });
   });
-});
+};
+
+addTaskStatus(tasks, score, data);
 
 const pairsJSON = JSON.stringify(data, 0, 2);
 
 fs.writeFile('./data/data.json', pairsJSON, 'utf8', () => {
   console.log('Writing is done!'); // eslint-disable-line no-console
 });
+
+module.exports = {
+  mentorGithub,
+  studentGithub,
+  tasksList,
+  mentorScore,
+  fieldMapping,
+  getNumberOfRows,
+  getMentor,
+  getMentors,
+  getPair,
+  getPairs,
+  getTask,
+  getTasks,
+  getScore,
+  getScores,
+  mergePairsAndMentors,
+  mergeTasksAndMainDataObject,
+  addTaskStatus,
+};
