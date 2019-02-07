@@ -46,10 +46,9 @@ class FireBase {
     });
   }
 
-  static logout(callback) {
+  static logout() {
     firebase.auth().signOut().then(() => {
       window.location.reload();
-      callback();
     }).catch((error) => {
       throw new Error(error);
     });

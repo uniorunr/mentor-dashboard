@@ -11,12 +11,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import FireBase from '../../../firebase/firebase';
 
-const pause = time => new Promise((resolve) => {
-  setTimeout(() => {
-    resolve();
-  }, time);
-});
-
 const styles = theme => ({
   avatar: {
     margin: 4,
@@ -44,9 +38,7 @@ class UserInfo extends Component {
   };
 
   handleLogout = async () => {
-    const { handleLogout } = this.props;
-    await pause(1000);
-    await FireBase.logout(handleLogout);
+    await FireBase.logout();
   }
 
   handleToggle = () => {
@@ -108,7 +100,6 @@ class UserInfo extends Component {
 UserInfo.propTypes = {
   classes: PropTypes.instanceOf(Object).isRequired,
   mentorDataObj: PropTypes.instanceOf(Object).isRequired,
-  handleLogout: PropTypes.func.isRequired,
 };
 
 export default withStyles(styles)(UserInfo);
