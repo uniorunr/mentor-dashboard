@@ -1,4 +1,6 @@
 import React, { Component, Fragment } from 'react';
+import * as firebase from 'firebase/app';
+import 'firebase/auth';
 import Select from 'react-select';
 import PropTypes from 'prop-types';
 import './UserPicker.css';
@@ -17,9 +19,16 @@ class UserPicker extends Component {
   };
 
   componentDidMount = () => {
-    const mentorFromStorage = localStorage.getItem('selectedMentor');
-    this.setState({
-      selectedOption: { value: mentorFromStorage, label: mentorFromStorage },
+    firebase.auth().onAuthStateChanged((user) => {
+      const mentorFromStorage = localStorage.getItem('selectedMentor');
+      if (user) {
+        this.handleChange({ value: 'alex-zayats', label: 'alex-zayats' });
+        localStorage.removeItem('selectedMentor');
+      } else if (mentorFromStorage) {
+        this.setState({
+          selectedOption: { value: mentorFromStorage, label: mentorFromStorage },
+        });
+      }
     });
   }
 
