@@ -38,10 +38,6 @@ class App extends Component {
     });
   }
 
-  handleLogout = () => {
-    console.log(this.state);
-  }
-
   render() {
     const { mentor, mentorDataObj } = this.state;
     return (
@@ -49,7 +45,6 @@ class App extends Component {
         <NavBar
           handleInput={this.handleInput}
           mentorDataObj={mentorDataObj}
-          handleLogout={this.handleLogout}
         />
         {mentor ? <Table mentor={mentor} /> : null}
       </Fragment>

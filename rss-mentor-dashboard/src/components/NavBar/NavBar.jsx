@@ -9,7 +9,7 @@ import { mentorsList } from '../../utils/parseJSON';
 
 class NavBar extends Component {
   render() {
-    const { handleInput, mentorDataObj, handleLogout } = this.props;
+    const { handleInput, mentorDataObj } = this.props;
     return (
       <div className="navbar-container">
         <nav className="navbar">
@@ -22,7 +22,6 @@ class NavBar extends Component {
           {mentorDataObj ? (
             <UserInfo
               mentorDataObj={mentorDataObj}
-              handleLogout={handleLogout}
             />
           ) : <LoginButton />}
         </nav>
@@ -34,7 +33,6 @@ class NavBar extends Component {
 NavBar.propTypes = {
   handleInput: PropTypes.func.isRequired,
   mentorDataObj: PropTypes.instanceOf(Object),
-  handleLogout: PropTypes.func.isRequired,
 };
 
 NavBar.defaultProps = {
