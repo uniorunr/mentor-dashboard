@@ -22,14 +22,10 @@ class FireBase {
   }
 
   static async auth() {
-    const provider = new firebase.auth.GithubAuthProvider();
-
-    const token = await firebase.auth().signInWithPopup(provider)
+    const token = await firebase.auth().signInWithPopup(new firebase.auth.GithubAuthProvider())
       .then(result => result.credential.accessToken)
       .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        throw new Error(`Error Code: ${errorCode}, Message: ${errorMessage}`);
+        throw new Error(error);
       });
 
     const userData = await fetch(`https://api.github.com/user?access_token=${token}`)
@@ -38,7 +34,26 @@ class FireBase {
         throw new Error(error);
       });
 
-    return userData;
+    const user = firebase.auth().currentUser;
+
+    localStorage.setItem('userStatus', 'loggedIn');
+
+    user.updateProfile({
+      displayName: userData.login,
+      photoURL: userData.avatar_url,
+    }).catch((error) => {
+      throw new Error(error);
+    });
+  }
+
+  static logout(callback) {
+    firebase.auth().signOut().then(() => {
+      window.location.reload();
+      callback();
+    }).catch((error) => {
+      throw new Error(error);
+    });
+    localStorage.removeItem('selectedMentor');
   }
 }
 
