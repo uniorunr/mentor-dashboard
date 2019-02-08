@@ -26,11 +26,13 @@ exports[`renders correctly 1`] = `
         onTouchEnd={[Function]}
       >
         <div
-          className="css-1hwfws3 react-select__value-container react-select__value-container--has-value"
+          className="css-1hwfws3 react-select__value-container"
         >
           <div
-            className="css-xp4uvy react-select__single-value"
-          />
+            className="css-1492t68 react-select__placeholder"
+          >
+            github account
+          </div>
           <div
             className="css-1g6gooi"
           >
@@ -116,6 +118,36 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
     </div>
+    <button
+      aria-haspopup="true"
+      className="MuiButtonBase-root-32 MuiButton-root-6 MuiButton-text-8 MuiButton-flat-11 UserInfo-button-5"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label-7"
+      >
+        <div
+          className="MuiAvatar-root-35 MuiAvatar-colorDefault-36 UserInfo-avatar-1"
+        />
+      </span>
+      <span
+        className="MuiTouchRipple-root-38"
+      />
+    </button>
   </nav>
 </div>
 `;
