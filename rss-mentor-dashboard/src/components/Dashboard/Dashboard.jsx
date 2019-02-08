@@ -11,10 +11,10 @@ import Paper from '@material-ui/core/Paper';
 import { getDataByMentor, data, tasksList } from '../../utils/parseJSON';
 import { getFormatOfCell, cellFormatting } from '../../utils/formatting';
 
-const styles = theme => ({
+const styles = () => ({
   root: {
     width: '90%',
-    marginTop: theme.spacing.unit / 2,
+    margin: '1% 0 4%',
     overflowX: 'auto',
   },
   table: {

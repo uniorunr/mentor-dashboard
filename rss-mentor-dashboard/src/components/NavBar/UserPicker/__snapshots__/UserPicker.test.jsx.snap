@@ -11,11 +11,13 @@ exports[`renders correctly 1`] = `
     onTouchEnd={[Function]}
   >
     <div
-      className="css-1hwfws3 react-select__value-container react-select__value-container--has-value"
+      className="css-1hwfws3 react-select__value-container"
     >
       <div
-        className="css-xp4uvy react-select__single-value"
-      />
+        className="css-1492t68 react-select__placeholder"
+      >
+        github account
+      </div>
       <div
         className="css-1g6gooi"
       >
