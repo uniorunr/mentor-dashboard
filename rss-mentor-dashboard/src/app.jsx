@@ -7,6 +7,7 @@ import 'firebase/database';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import SimpleTable from './components/Dashboard/Dashboard';
+import Footer from './components/Footer/Footer';
 
 FireBase.init();
 
@@ -64,6 +65,7 @@ class App extends Component {
         {mentor && database
           ? <SimpleTable mentor={mentor} database={database} />
           : null}
+        <Footer link="https://github.com/uniorunr" text="uniorunr" />
       </Fragment>
     );
   }

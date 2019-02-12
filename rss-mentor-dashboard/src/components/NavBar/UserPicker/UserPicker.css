@@ -9,10 +9,8 @@
 
 .react-select-container .react-select__control:hover {
   background-color: rgba(0, 0, 0, 0.07);
-}
-
-.react-select-container .react-select__control:hover {
   border: 1px solid rgba(0, 0, 0, 0.23);
+  cursor: pointer;
 }
 
 .react-select-container .react-select__control.react-select__control--is-focused {

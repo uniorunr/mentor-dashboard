@@ -14,7 +14,7 @@ import { getFormatOfCell, cellFormatting } from '../../utils/formatting';
 const styles = () => ({
   root: {
     width: '90%',
-    margin: '1% 0 4%',
+    margin: '1% 0 2%',
     overflowX: 'auto',
   },
   table: {
