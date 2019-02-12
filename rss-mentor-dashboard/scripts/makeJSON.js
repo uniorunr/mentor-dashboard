@@ -51,12 +51,9 @@ const getMentor = (sheet, currentRow) => {
   const github = sheet[fieldMapping.mentorGithub.github + currentRow].v;
 
   const mentor = {
-    name,
-    surname,
     fullName: `${name.trim().toLowerCase()} ${surname.trim().toLowerCase()}`,
     city: sheet[fieldMapping.mentorGithub.city + currentRow].v,
     count: sheet[fieldMapping.mentorGithub.count + currentRow].v,
-    github,
     githubUsername: github.replace(/^.*:\/\/github\.com\//, '').replace('/', '').toLowerCase(),
     students: [],
   };

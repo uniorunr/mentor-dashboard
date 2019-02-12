@@ -1,12 +1,9 @@
 {
   "mentors": [
     {
-      "name": "Sergey",
-      "surname": "Maksimuk",
       "fullName": "sergey maksimuk",
       "city": "Брест",
       "count": 10,
-      "github": "https://github.com/maximuk",
       "githubUsername": "maximuk",
       "students": [
         {
@@ -562,12 +559,9 @@
       ]
     },
     {
-      "name": "Aliaksandr",
-      "surname": "Zayats",
       "fullName": "aliaksandr zayats",
       "city": "Гомель",
       "count": 2,
-      "github": "https://github.com/alex-zayats",
       "githubUsername": "alex-zayats",
       "students": [
         {
@@ -793,12 +787,9 @@
       ]
     },
     {
-      "name": "Akiaksandr",
-      "surname": "Zahorski",
       "fullName": "akiaksandr zahorski",
       "city": "Гомель",
       "count": 3,
-      "github": "https://github.com/AliaksandrZahorski",
       "githubUsername": "aliaksandrzahorski",
       "students": [
         {
@@ -1079,12 +1070,9 @@
       ]
     },
     {
-      "name": "Siarhei",
-      "surname": "Prystauka",
       "fullName": "siarhei prystauka",
       "city": "Гомель",
       "count": 2,
-      "github": "https://github.com/Pristavka",
       "githubUsername": "pristavka",
       "students": [
         {
@@ -1310,12 +1298,9 @@
       ]
     },
     {
-      "name": "Dzianis",
-      "surname": "Pryshchep",
       "fullName": "dzianis pryshchep",
       "city": "Гомель",
       "count": 2,
-      "github": "https://github.com/dpryshchep",
       "githubUsername": "dpryshchep",
       "students": [
         {
@@ -1541,12 +1526,9 @@
       ]
     },
     {
-      "name": "Aliaksandr",
-      "surname": "Klimau",
       "fullName": "aliaksandr klimau",
       "city": "Гомель",
       "count": 3,
-      "github": "https://github.com/quantum-noise",
       "githubUsername": "quantum-noise",
       "students": [
         {
@@ -1827,12 +1809,9 @@
       ]
     },
     {
-      "name": "Artsiom",
-      "surname": "Haurylin",
       "fullName": "artsiom haurylin",
       "city": "Гомель",
       "count": 2,
-      "github": "https://github.com/ahaurylin",
       "githubUsername": "ahaurylin",
       "students": [
         {
@@ -2058,12 +2037,9 @@
       ]
     },
     {
-      "name": "Elena",
-      "surname": "Grebenchuk",
       "fullName": "elena grebenchuk",
       "city": "Гомель",
       "count": 2,
-      "github": "https://github.com/elgrebenchuk",
       "githubUsername": "elgrebenchuk",
       "students": [
         {
@@ -2289,12 +2265,9 @@
       ]
     },
     {
-      "name": "Andrei",
-      "surname": "Furs",
       "fullName": "andrei furs",
       "city": "Гомель",
       "count": 5,
-      "github": "https://github.com/yganda",
       "githubUsername": "yganda",
       "students": [
         {
@@ -2685,12 +2658,9 @@
       ]
     },
     {
-      "name": "Dzianis",
-      "surname": "Bunchanka",
       "fullName": "dzianis bunchanka",
       "city": "Гомель",
       "count": 2,
-      "github": "https://github.com/DenisBun",
       "githubUsername": "denisbun",
       "students": [
         {
@@ -2916,12 +2886,9 @@
       ]
     },
     {
-      "name": "Rem",
-      "surname": "Apasov",
       "fullName": "rem apasov",
       "city": "Гомель",
       "count": 3,
-      "github": "https://github.com/remapasov",
       "githubUsername": "remapasov",
       "students": [
         {
@@ -3202,12 +3169,9 @@
       ]
     },
     {
-      "name": "Tatsiana",
-      "surname": "Khinevich",
       "fullName": "tatsiana khinevich",
       "city": "Гродно",
       "count": 0,
-      "github": "TatsianaKhinevich-EPAM",
       "githubUsername": "tatsianakhinevich-epam",
       "students": [
         {
@@ -3323,12 +3287,9 @@
       ]
     },
     {
-      "name": "Andrei",
-      "surname": "Zhuk",
       "fullName": "andrei zhuk",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/Andrei-Zhuk",
       "githubUsername": "andrei-zhuk",
       "students": [
         {
@@ -3719,12 +3680,9 @@
       ]
     },
     {
-      "name": "Mikita",
-      "surname": "Zhuikou",
       "fullName": "mikita zhuikou",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/Nikitzu",
       "githubUsername": "nikitzu",
       "students": [
         {
@@ -4115,12 +4073,9 @@
       ]
     },
     {
-      "name": "Aliaksei",
-      "surname": "Zayats",
       "fullName": "aliaksei zayats",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/alex-mnsk",
       "githubUsername": "alex-mnsk",
       "students": [
         {
@@ -4511,12 +4466,9 @@
       ]
     },
     {
-      "name": "Pavel",
-      "surname": "Zaletski",
       "fullName": "pavel zaletski",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/PavelZaletski",
       "githubUsername": "pavelzaletski",
       "students": [
         {
@@ -4797,12 +4749,9 @@
       ]
     },
     {
-      "name": "Yana",
-      "surname": "Zaitsava",
       "fullName": "yana zaitsava",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/yana95",
       "githubUsername": "yana95",
       "students": [
         {
@@ -5028,12 +4977,9 @@
       ]
     },
     {
-      "name": "Pavel",
-      "surname": "Yukhnevich",
       "fullName": "pavel yukhnevich",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/tibmt",
       "githubUsername": "tibmt",
       "students": [
         {
@@ -5424,12 +5370,9 @@
       ]
     },
     {
-      "name": "Anton",
-      "surname": "Yatskevich",
       "fullName": "anton yatskevich",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/a-yatskevich",
       "githubUsername": "a-yatskevich",
       "students": [
         {
@@ -5655,12 +5598,9 @@
       ]
     },
     {
-      "name": "Viktoriya",
-      "surname": "Vorozhun",
       "fullName": "viktoriya vorozhun",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/ViktoriyaVorozhun",
       "githubUsername": "viktoriyavorozhun",
       "students": [
         {
@@ -5941,12 +5881,9 @@
       ]
     },
     {
-      "name": "Nikolai",
-      "surname": "Verbitskii",
       "fullName": "nikolai verbitskii",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/NikolaiVerbitskii",
       "githubUsername": "nikolaiverbitskii",
       "students": [
         {
@@ -6172,12 +6109,9 @@
       ]
     },
     {
-      "name": "Igor",
-      "surname": "Tsialiuk",
       "fullName": "igor tsialiuk",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/sijlver",
       "githubUsername": "sijlver",
       "students": [
         {
@@ -6458,12 +6392,9 @@
       ]
     },
     {
-      "name": "MIKITA",
-      "surname": "TRUKHANAVETS",
       "fullName": "mikita trukhanavets",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/ntrukhanovets",
       "githubUsername": "ntrukhanovets",
       "students": [
         {
@@ -6799,12 +6730,9 @@
       ]
     },
     {
-      "name": "Kiryl",
-      "surname": "Tofan",
       "fullName": "kiryl tofan",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/KVtofan",
       "githubUsername": "kvtofan",
       "students": [
         {
@@ -7140,12 +7068,9 @@
       ]
     },
     {
-      "name": "Katsiaryna",
-      "surname": "Tatarynovich",
       "fullName": "katsiaryna tatarynovich",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/etatarinovich18",
       "githubUsername": "etatarinovich18",
       "students": [
         {
@@ -7426,12 +7351,9 @@
       ]
     },
     {
-      "name": "Uladzislau",
-      "surname": "Tarasenka",
       "fullName": "uladzislau tarasenka",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/einfachvlad/",
       "githubUsername": "einfachvlad",
       "students": [
         {
@@ -7657,12 +7579,9 @@
       ]
     },
     {
-      "name": "Aliaksandr",
-      "surname": "Tachko",
       "fullName": "aliaksandr tachko",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/aliaksandrT",
       "githubUsername": "aliaksandrt",
       "students": [
         {
@@ -7998,12 +7917,9 @@
       ]
     },
     {
-      "name": "Dzianis",
-      "surname": "Sushchenya",
       "fullName": "dzianis sushchenya",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/sushchenja",
       "githubUsername": "sushchenja",
       "students": [
         {
@@ -8229,12 +8145,9 @@
       ]
     },
     {
-      "name": "Daniil",
-      "surname": "Suleiman",
       "fullName": "daniil suleiman",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/sulemanof",
       "githubUsername": "sulemanof",
       "students": [
         {
@@ -8515,12 +8428,9 @@
       ]
     },
     {
-      "name": "Mikita",
-      "surname": "Subbot",
       "fullName": "mikita subbot",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/nsubbot",
       "githubUsername": "nsubbot",
       "students": [
         {
@@ -8911,12 +8821,9 @@
       ]
     },
     {
-      "name": "Anton",
-      "surname": "Stsiapanau",
       "fullName": "anton stsiapanau",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/stpnvntn",
       "githubUsername": "stpnvntn",
       "students": [
         {
@@ -9307,12 +9214,9 @@
       ]
     },
     {
-      "name": "Alexander",
-      "surname": "Spesivtsev",
       "fullName": "alexander spesivtsev",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/shuspes",
       "githubUsername": "shuspes",
       "students": [
         {
@@ -9593,12 +9497,9 @@
       ]
     },
     {
-      "name": "Mikalai",
-      "surname": "Sokarau",
       "fullName": "mikalai sokarau",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/mikalai-sokarau",
       "githubUsername": "mikalai-sokarau",
       "students": [
         {
@@ -9934,12 +9835,9 @@
       ]
     },
     {
-      "name": "Kseniya",
-      "surname": "Smorshchek",
       "fullName": "kseniya smorshchek",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/KseniyaSmorshchek",
       "githubUsername": "kseniyasmorshchek",
       "students": [
         {
@@ -10220,12 +10118,9 @@
       ]
     },
     {
-      "name": "Arseni",
-      "surname": "Shynkarenka",
       "fullName": "arseni shynkarenka",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/arhigod",
       "githubUsername": "arhigod",
       "students": [
         {
@@ -10561,12 +10456,9 @@
       ]
     },
     {
-      "name": "Andrei",
-      "surname": "Shyliahin",
       "fullName": "andrei shyliahin",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/Atzkdeff",
       "githubUsername": "atzkdeff",
       "students": [
         {
@@ -10847,12 +10739,9 @@
       ]
     },
     {
-      "name": "Dzianis",
-      "surname": "Shutsikau",
       "fullName": "dzianis shutsikau",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/Shutya",
       "githubUsername": "shutya",
       "students": [
         {
@@ -11243,12 +11132,9 @@
       ]
     },
     {
-      "name": "Klim",
-      "surname": "Shuplenkou",
       "fullName": "klim shuplenkou",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/Klim711",
       "githubUsername": "klim711",
       "students": [
         {
@@ -11474,12 +11360,9 @@
       ]
     },
     {
-      "name": "Elena",
-      "surname": "Shokhan",
       "fullName": "elena shokhan",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/ElenaShokhanEPAM",
       "githubUsername": "elenashokhanepam",
       "students": [
         {
@@ -11705,12 +11588,9 @@
       ]
     },
     {
-      "name": "Andrei",
-      "surname": "Shelenhouski",
       "fullName": "andrei shelenhouski",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/manuminsk",
       "githubUsername": "manuminsk",
       "students": [
         {
@@ -11991,12 +11871,9 @@
       ]
     },
     {
-      "name": "Dzianis",
-      "surname": "Sheka",
       "fullName": "dzianis sheka",
       "city": "Минск",
       "count": 8,
-      "github": "https://github.com/davojta",
       "githubUsername": "davojta",
       "students": [
         {
@@ -12552,12 +12429,9 @@
       ]
     },
     {
-      "name": "Yahor",
-      "surname": "Sheinikau",
       "fullName": "yahor sheinikau",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/Naooki",
       "githubUsername": "naooki",
       "students": [
         {
@@ -12838,12 +12712,9 @@
       ]
     },
     {
-      "name": "Tsikhan",
-      "surname": "Shcharbakou",
       "fullName": "tsikhan shcharbakou",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/forkollaider",
       "githubUsername": "forkollaider",
       "students": [
         {
@@ -13179,12 +13050,9 @@
       ]
     },
     {
-      "name": "Mikalai",
-      "surname": "Shchakatsikhin",
       "fullName": "mikalai shchakatsikhin",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/Hirurgo",
       "githubUsername": "hirurgo",
       "students": [
         {
@@ -13465,12 +13333,9 @@
       ]
     },
     {
-      "name": "Anton",
-      "surname": "Sharapa",
       "fullName": "anton sharapa",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/asharapa",
       "githubUsername": "asharapa",
       "students": [
         {
@@ -13696,12 +13561,9 @@
       ]
     },
     {
-      "name": "Kiryl",
-      "surname": "Shaliapin",
       "fullName": "kiryl shaliapin",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/CyrilShalyapin",
       "githubUsername": "cyrilshalyapin",
       "students": [
         {
@@ -14092,12 +13954,9 @@
       ]
     },
     {
-      "name": "Illia",
-      "surname": "Sauchuk",
       "fullName": "illia sauchuk",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/IlyaLisitsin",
       "githubUsername": "ilyalisitsin",
       "students": [
         {
@@ -14488,12 +14347,9 @@
       ]
     },
     {
-      "name": "Ekaterina",
-      "surname": "Sanko",
       "fullName": "ekaterina sanko",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/katya-sanko",
       "githubUsername": "katya-sanko",
       "students": [
         {
@@ -14774,12 +14630,9 @@
       ]
     },
     {
-      "name": "Yuliya",
-      "surname": "Samuilik",
       "fullName": "yuliya samuilik",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/yulia9",
       "githubUsername": "yulia9",
       "students": [
         {
@@ -15060,12 +14913,9 @@
       ]
     },
     {
-      "name": "Dzmitry",
-      "surname": "Samuilik",
       "fullName": "dzmitry samuilik",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/Sambl4",
       "githubUsername": "sambl4",
       "students": [
         {
@@ -15291,12 +15141,9 @@
       ]
     },
     {
-      "name": "Yauheni",
-      "surname": "Rutkouski",
       "fullName": "yauheni rutkouski",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/erutkovsky",
       "githubUsername": "erutkovsky",
       "students": [
         {
@@ -15577,12 +15424,9 @@
       ]
     },
     {
-      "name": "Aliaksandr",
-      "surname": "Rudzin",
       "fullName": "aliaksandr rudzin",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/RudikAleksandr",
       "githubUsername": "rudikaleksandr",
       "students": [
         {
@@ -15973,12 +15817,9 @@
       ]
     },
     {
-      "name": "Mikita",
-      "surname": "Rudy",
       "fullName": "mikita rudy",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/NikitaRudy",
       "githubUsername": "nikitarudy",
       "students": [
         {
@@ -16369,12 +16210,9 @@
       ]
     },
     {
-      "name": "Andres",
-      "surname": "Rios",
       "fullName": "andres rios",
       "city": "Минск",
       "count": 6,
-      "github": "https://github.com/rianby64",
       "githubUsername": "rianby64",
       "students": [
         {
@@ -16820,12 +16658,9 @@
       ]
     },
     {
-      "name": "Dzianis",
-      "surname": "Reznik",
       "fullName": "dzianis reznik",
       "city": "Минск",
       "count": 6,
-      "github": "http://github.com/dzianisreznik/",
       "githubUsername": "dzianisreznik",
       "students": [
         {
@@ -17271,12 +17106,9 @@
       ]
     },
     {
-      "name": "Artsiom",
-      "surname": "Reutovich",
       "fullName": "artsiom reutovich",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/Xelsoid",
       "githubUsername": "xelsoid",
       "students": [
         {
@@ -17502,12 +17334,9 @@
       ]
     },
     {
-      "name": "Aliaksandr",
-      "surname": "Razumovich",
       "fullName": "aliaksandr razumovich",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/razumovich/",
       "githubUsername": "razumovich",
       "students": [
         {
@@ -17733,12 +17562,9 @@
       ]
     },
     {
-      "name": "Dzmitry",
-      "surname": "Ramaniuk",
       "fullName": "dzmitry ramaniuk",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/DmitryRomaniuk",
       "githubUsername": "dmitryromaniuk",
       "students": [
         {
@@ -18019,12 +17845,9 @@
       ]
     },
     {
-      "name": "Yauheni",
-      "surname": "Ralko",
       "fullName": "yauheni ralko",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/yralko",
       "githubUsername": "yralko",
       "students": [
         {
@@ -18305,12 +18128,9 @@
       ]
     },
     {
-      "name": "Anastasiya",
-      "surname": "Pryvalava",
       "fullName": "anastasiya pryvalava",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/anastasiaprivalova",
       "githubUsername": "anastasiaprivalova",
       "students": [
         {
@@ -18536,12 +18356,9 @@
       ]
     },
     {
-      "name": "Dzmitry",
-      "surname": "Prudnikau",
       "fullName": "dzmitry prudnikau",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/diprudnikov",
       "githubUsername": "diprudnikov",
       "students": [
         {
@@ -18932,12 +18749,9 @@
       ]
     },
     {
-      "name": "Hanna",
-      "surname": "Pratasevich",
       "fullName": "hanna pratasevich",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/Anik188",
       "githubUsername": "anik188",
       "students": [
         {
@@ -19328,12 +19142,9 @@
       ]
     },
     {
-      "name": "Artsiom",
-      "surname": "Piakhota",
       "fullName": "artsiom piakhota",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/LithiumFallen",
       "githubUsername": "lithiumfallen",
       "students": [
         {
@@ -19559,12 +19370,9 @@
       ]
     },
     {
-      "name": "Yauheni",
-      "surname": "Pasiukevich",
       "fullName": "yauheni pasiukevich",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/pasyukevich",
       "githubUsername": "pasyukevich",
       "students": [
         {
@@ -19955,12 +19763,9 @@
       ]
     },
     {
-      "name": "Kiryl",
-      "surname": "Panou",
       "fullName": "kiryl panou",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/kirillpanov",
       "githubUsername": "kirillpanov",
       "students": [
         {
@@ -20351,12 +20156,9 @@
       ]
     },
     {
-      "name": "Dzmitry",
-      "surname": "Panamarenka",
       "fullName": "dzmitry panamarenka",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/dzmitrypanamarenka",
       "githubUsername": "dzmitrypanamarenka",
       "students": [
         {
@@ -20582,12 +20384,9 @@
       ]
     },
     {
-      "name": "Andrei",
-      "surname": "Palchys",
       "fullName": "andrei palchys",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/apalchys",
       "githubUsername": "apalchys",
       "students": [
         {
@@ -20868,12 +20667,9 @@
       ]
     },
     {
-      "name": "Volha",
-      "surname": "Paddubka",
       "fullName": "volha paddubka",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/OlgaPoddubko",
       "githubUsername": "olgapoddubko",
       "students": [
         {
@@ -21209,12 +21005,9 @@
       ]
     },
     {
-      "name": "Aliaksandr",
-      "surname": "Novik",
       "fullName": "aliaksandr novik",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/AlexNo",
       "githubUsername": "alexno",
       "students": [
         {
@@ -21550,12 +21343,9 @@
       ]
     },
     {
-      "name": "Yana",
-      "surname": "Niaronskaya",
       "fullName": "yana niaronskaya",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/YanaNeronskaya",
       "githubUsername": "yananeronskaya",
       "students": [
         {
@@ -21836,12 +21626,9 @@
       ]
     },
     {
-      "name": "Natalya",
-      "surname": "Nekazakova",
       "fullName": "natalya nekazakova",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/natashanekazakova",
       "githubUsername": "natashanekazakova",
       "students": [
         {
@@ -22067,12 +21854,9 @@
       ]
     },
     {
-      "name": "Mikhail",
-      "surname": "Naharayeu",
       "fullName": "mikhail naharayeu",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/MikhailLU",
       "githubUsername": "mikhaillu",
       "students": [
         {
@@ -22408,12 +22192,9 @@
       ]
     },
     {
-      "name": "Maryia",
-      "surname": "Nabzdorava",
       "fullName": "maryia nabzdorava",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/Maryia-N-N",
       "githubUsername": "maryia-n-n",
       "students": [
         {
@@ -22639,12 +22420,9 @@
       ]
     },
     {
-      "name": "Arif",
-      "surname": "Mustafazade",
       "fullName": "arif mustafazade",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/mustafazadeAR",
       "githubUsername": "mustafazadear",
       "students": [
         {
@@ -22925,12 +22703,9 @@
       ]
     },
     {
-      "name": "Barys",
-      "surname": "Marukhin",
       "fullName": "barys marukhin",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/barysmarukhin",
       "githubUsername": "barysmarukhin",
       "students": [
         {
@@ -23156,12 +22931,9 @@
       ]
     },
     {
-      "name": "Andrei",
-      "surname": "Markovich",
       "fullName": "andrei markovich",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/themarkmarrone",
       "githubUsername": "themarkmarrone",
       "students": [
         {
@@ -23552,12 +23324,9 @@
       ]
     },
     {
-      "name": "Volha",
-      "surname": "Mardvilka",
       "fullName": "volha mardvilka",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/olgamardvilko",
       "githubUsername": "olgamardvilko",
       "students": [
         {
@@ -23838,12 +23607,9 @@
       ]
     },
     {
-      "name": "Aliaksandr",
-      "surname": "Mamonenka",
       "fullName": "aliaksandr mamonenka",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/AliaksandrMamonenka",
       "githubUsername": "aliaksandrmamonenka",
       "students": [
         {
@@ -24069,12 +23835,9 @@
       ]
     },
     {
-      "name": "Aliaksei",
-      "surname": "Makas",
       "fullName": "aliaksei makas",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/Muskos",
       "githubUsername": "muskos",
       "students": [
         {
@@ -24355,12 +24118,9 @@
       ]
     },
     {
-      "name": "Artsiom",
-      "surname": "Lykau",
       "fullName": "artsiom lykau",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/lykovartem",
       "githubUsername": "lykovartem",
       "students": [
         {
@@ -24696,12 +24456,9 @@
       ]
     },
     {
-      "name": "Aleh",
-      "surname": "Lipski",
       "fullName": "aleh lipski",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/lipskiy-aleh",
       "githubUsername": "lipskiy-aleh",
       "students": [
         {
@@ -25092,12 +24849,9 @@
       ]
     },
     {
-      "name": "Andrei",
-      "surname": "Liaukou",
       "fullName": "andrei liaukou",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/liaukou",
       "githubUsername": "liaukou",
       "students": [
         {
@@ -25378,12 +25132,9 @@
       ]
     },
     {
-      "name": "Andrei",
-      "surname": "Lenkou",
       "fullName": "andrei lenkou",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/LenkouAndrei",
       "githubUsername": "lenkouandrei",
       "students": [
         {
@@ -25774,12 +25525,9 @@
       ]
     },
     {
-      "name": "Ron",
-      "surname": "Lavit",
       "fullName": "ron lavit",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/Lavitr",
       "githubUsername": "lavitr",
       "students": [
         {
@@ -26060,12 +25808,9 @@
       ]
     },
     {
-      "name": "Artsiom",
-      "surname": "Latyshau",
       "fullName": "artsiom latyshau",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/artemlatyshev",
       "githubUsername": "artemlatyshev",
       "students": [
         {
@@ -26346,12 +26091,9 @@
       ]
     },
     {
-      "name": "Viachaslau",
-      "surname": "Latushkin",
       "fullName": "viachaslau latushkin",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/viachaslau-latushkin",
       "githubUsername": "viachaslau-latushkin",
       "students": [
         {
@@ -26632,12 +26374,9 @@
       ]
     },
     {
-      "name": "Aliaksandr",
-      "surname": "Kuzniatsou",
       "fullName": "aliaksandr kuzniatsou",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/AliaksandrKuzniatsou",
       "githubUsername": "aliaksandrkuzniatsou",
       "students": [
         {
@@ -27028,12 +26767,9 @@
       ]
     },
     {
-      "name": "Pavel",
-      "surname": "Kuzniatsou",
       "fullName": "pavel kuzniatsou",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/PavelKuzniatsou",
       "githubUsername": "pavelkuzniatsou",
       "students": [
         {
@@ -27424,12 +27160,9 @@
       ]
     },
     {
-      "name": "Bahdan",
-      "surname": "Kutas",
       "fullName": "bahdan kutas",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/AgentKB",
       "githubUsername": "agentkb",
       "students": [
         {
@@ -27820,12 +27553,9 @@
       ]
     },
     {
-      "name": "Viktar",
-      "surname": "Kurbatski",
       "fullName": "viktar kurbatski",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/Woozzone",
       "githubUsername": "woozzone",
       "students": [
         {
@@ -28106,12 +27836,9 @@
       ]
     },
     {
-      "name": "Alexandra",
-      "surname": "Kukolca",
       "fullName": "alexandra kukolca",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/KukolcaAlexandra",
       "githubUsername": "kukolcaalexandra",
       "students": [
         {
@@ -28447,12 +28174,9 @@
       ]
     },
     {
-      "name": "artsiom",
-      "surname": "kukharev",
       "fullName": "artsiom kukharev",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/xeontem",
       "githubUsername": "xeontem",
       "students": [
         {
@@ -28788,12 +28512,9 @@
       ]
     },
     {
-      "name": "Dzmitry",
-      "surname": "Kudla",
       "fullName": "dzmitry kudla",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/Linus2228",
       "githubUsername": "linus2228",
       "students": [
         {
@@ -29074,12 +28795,9 @@
       ]
     },
     {
-      "name": "Denis",
-      "surname": "Kravchenko",
       "fullName": "denis kravchenko",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/Shank111",
       "githubUsername": "shank111",
       "students": [
         {
@@ -29360,12 +29078,9 @@
       ]
     },
     {
-      "name": "ALIAKSEI",
-      "surname": "KRAUCHANKA",
       "fullName": "aliaksei krauchanka",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/aliakseikrauchanka",
       "githubUsername": "aliakseikrauchanka",
       "students": [
         {
@@ -29591,12 +29306,9 @@
       ]
     },
     {
-      "name": "Vitali",
-      "surname": "Krasnou",
       "fullName": "vitali krasnou",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/error404as/",
       "githubUsername": "error404as",
       "students": [
         {
@@ -29822,12 +29534,9 @@
       ]
     },
     {
-      "name": "Aliaksandr",
-      "surname": "Krasnou",
       "fullName": "aliaksandr krasnou",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/aliaksandrkrasnou",
       "githubUsername": "aliaksandrkrasnou",
       "students": [
         {
@@ -30053,12 +29762,9 @@
       ]
     },
     {
-      "name": "Vladislav",
-      "surname": "Kovaliov",
       "fullName": "vladislav kovaliov",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/vladislavkovaliov/",
       "githubUsername": "vladislavkovaliov",
       "students": [
         {
@@ -30284,12 +29990,9 @@
       ]
     },
     {
-      "name": "Sergeh",
-      "surname": "Korotkin",
       "fullName": "sergeh korotkin",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/korotkin",
       "githubUsername": "korotkin",
       "students": [
         {
@@ -30680,12 +30383,9 @@
       ]
     },
     {
-      "name": "Alena",
-      "surname": "Korachkina",
       "fullName": "alena korachkina",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/Papialoushka",
       "githubUsername": "papialoushka",
       "students": [
         {
@@ -30911,12 +30611,9 @@
       ]
     },
     {
-      "name": "Viktoryia",
-      "surname": "Klimenka",
       "fullName": "viktoryia klimenka",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/candentira",
       "githubUsername": "candentira",
       "students": [
         {
@@ -31197,12 +30894,9 @@
       ]
     },
     {
-      "name": "Aliaksandr",
-      "surname": "Kleshchukevich",
       "fullName": "aliaksandr kleshchukevich",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/sleepwalky",
       "githubUsername": "sleepwalky",
       "students": [
         {
@@ -31538,12 +31232,9 @@
       ]
     },
     {
-      "name": "Aliaksei",
-      "surname": "Khlebnikau",
       "fullName": "aliaksei khlebnikau",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/FallenBY1",
       "githubUsername": "fallenby1",
       "students": [
         {
@@ -31824,12 +31515,9 @@
       ]
     },
     {
-      "name": "Artur",
-      "surname": "Kazlouski",
       "fullName": "artur kazlouski",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/arturminsksum",
       "githubUsername": "arturminsksum",
       "students": [
         {
@@ -32110,12 +31798,9 @@
       ]
     },
     {
-      "name": "Maryna",
-      "surname": "Kavetskaya",
       "fullName": "maryna kavetskaya",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/shparkivozhyk",
       "githubUsername": "shparkivozhyk",
       "students": [
         {
@@ -32341,12 +32026,9 @@
       ]
     },
     {
-      "name": "Mikalai",
-      "surname": "Kavaliou",
       "fullName": "mikalai kavaliou",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/Nikkov17",
       "githubUsername": "nikkov17",
       "students": [
         {
@@ -32737,12 +32419,9 @@
       ]
     },
     {
-      "name": "Yana",
-      "surname": "Karotkina",
       "fullName": "yana karotkina",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/yanaSelin",
       "githubUsername": "yanaselin",
       "students": [
         {
@@ -33023,12 +32702,9 @@
       ]
     },
     {
-      "name": "Katsiaryna",
-      "surname": "Karanets",
       "fullName": "katsiaryna karanets",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/katekaranets",
       "githubUsername": "katekaranets",
       "students": [
         {
@@ -33419,12 +33095,9 @@
       ]
     },
     {
-      "name": "Elizaveta",
-      "surname": "Ivashkova",
       "fullName": "elizaveta ivashkova",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/ivashkovaliza",
       "githubUsername": "ivashkovaliza",
       "students": [
         {
@@ -33650,12 +33323,9 @@
       ]
     },
     {
-      "name": "Alena",
-      "surname": "Hrytsuk",
       "fullName": "alena hrytsuk",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/HeleneGritsuk",
       "githubUsername": "helenegritsuk",
       "students": [
         {
@@ -33991,12 +33661,9 @@
       ]
     },
     {
-      "name": "Dzmitry",
-      "surname": "Hrachou",
       "fullName": "dzmitry hrachou",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/falizyer",
       "githubUsername": "falizyer",
       "students": [
         {
@@ -34387,12 +34054,9 @@
       ]
     },
     {
-      "name": "Hanna",
-      "surname": "Hrabianiuk",
       "fullName": "hanna hrabianiuk",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/AnnaGrebenyuk",
       "githubUsername": "annagrebenyuk",
       "students": [
         {
@@ -34673,12 +34337,9 @@
       ]
     },
     {
-      "name": "Yauheni",
-      "surname": "Hladki",
       "fullName": "yauheni hladki",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/evgladkiy",
       "githubUsername": "evgladkiy",
       "students": [
         {
@@ -34959,12 +34620,9 @@
       ]
     },
     {
-      "name": "Yauheni",
-      "surname": "Harokh",
       "fullName": "yauheni harokh",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/EvgeniiGrh",
       "githubUsername": "evgeniigrh",
       "students": [
         {
@@ -35355,12 +35013,9 @@
       ]
     },
     {
-      "name": "Ilya",
-      "surname": "Hancharyk",
       "fullName": "ilya hancharyk",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/AmsterGet",
       "githubUsername": "amsterget",
       "students": [
         {
@@ -35751,12 +35406,9 @@
       ]
     },
     {
-      "name": "Yuliya",
-      "surname": "Haluza",
       "fullName": "yuliya haluza",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/yuliaHope",
       "githubUsername": "yuliahope",
       "students": [
         {
@@ -36147,12 +35799,9 @@
       ]
     },
     {
-      "name": "Konstantin",
-      "surname": "Grigorchuk",
       "fullName": "konstantin grigorchuk",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/PredokMiF",
       "githubUsername": "predokmif",
       "students": [
         {
@@ -36433,12 +36082,9 @@
       ]
     },
     {
-      "name": "Valeri",
-      "surname": "Gorobets",
       "fullName": "valeri gorobets",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/valeraGorobets/",
       "githubUsername": "valeragorobets",
       "students": [
         {
@@ -36829,12 +36475,9 @@
       ]
     },
     {
-      "name": "Pavel",
-      "surname": "Glebov",
       "fullName": "pavel glebov",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/pavelglebov",
       "githubUsername": "pavelglebov",
       "students": [
         {
@@ -37170,12 +36813,9 @@
       ]
     },
     {
-      "name": "Aliaksandr",
-      "surname": "Fiodarau",
       "fullName": "aliaksandr fiodarau",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/aliaksandrfiodarau",
       "githubUsername": "aliaksandrfiodarau",
       "students": [
         {
@@ -37401,12 +37041,9 @@
       ]
     },
     {
-      "name": "Dzianis",
-      "surname": "Dashkevich",
       "fullName": "dzianis dashkevich",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/DenisDashkevich",
       "githubUsername": "denisdashkevich",
       "students": [
         {
@@ -37797,12 +37434,9 @@
       ]
     },
     {
-      "name": "Siarhei",
-      "surname": "Churylin",
       "fullName": "siarhei churylin",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/Sergey-Churilin",
       "githubUsername": "sergey-churilin",
       "students": [
         {
@@ -38028,12 +37662,9 @@
       ]
     },
     {
-      "name": "Dzmitry",
-      "surname": "Chuchva",
       "fullName": "dzmitry chuchva",
       "city": "Минск",
       "count": 1,
-      "github": "https://github.com/dzmitry-chuchva",
       "githubUsername": "dzmitry-chuchva",
       "students": [
         {
@@ -38204,12 +37835,9 @@
       ]
     },
     {
-      "name": "Yauhen",
-      "surname": "Chaika",
       "fullName": "yauhen chaika",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/EugeneCh",
       "githubUsername": "eugenech",
       "students": [
         {
@@ -38600,12 +38228,9 @@
       ]
     },
     {
-      "name": "Viktoryia",
-      "surname": "Budzionnaya",
       "fullName": "viktoryia budzionnaya",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/elkinny",
       "githubUsername": "elkinny",
       "students": [
         {
@@ -38886,12 +38511,9 @@
       ]
     },
     {
-      "name": "Denis",
-      "surname": "Bozhyk",
       "fullName": "denis bozhyk",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/den-bozhyk",
       "githubUsername": "den-bozhyk",
       "students": [
         {
@@ -39282,12 +38904,9 @@
       ]
     },
     {
-      "name": "Katsiaryna",
-      "surname": "Birulia",
       "fullName": "katsiaryna birulia",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/kbirulia",
       "githubUsername": "kbirulia",
       "students": [
         {
@@ -39513,12 +39132,9 @@
       ]
     },
     {
-      "name": "Denis",
-      "surname": "Bezak",
       "fullName": "denis bezak",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/BezakDenis",
       "githubUsername": "bezakdenis",
       "students": [
         {
@@ -39854,12 +39470,9 @@
       ]
     },
     {
-      "name": "Anton",
-      "surname": "Bely",
       "fullName": "anton bely",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/ToshaBely",
       "githubUsername": "toshabely",
       "students": [
         {
@@ -40140,12 +39753,9 @@
       ]
     },
     {
-      "name": "Natallia",
-      "surname": "Belavusava",
       "fullName": "natallia belavusava",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/belousova-natallia",
       "githubUsername": "belousova-natallia",
       "students": [
         {
@@ -40371,12 +39981,9 @@
       ]
     },
     {
-      "name": "Vera",
-      "surname": "Barysava",
       "fullName": "vera barysava",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/TomasSpring",
       "githubUsername": "tomasspring",
       "students": [
         {
@@ -40602,12 +40209,9 @@
       ]
     },
     {
-      "name": "Dmitri",
-      "surname": "Bardt",
       "fullName": "dmitri bardt",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/ximet",
       "githubUsername": "ximet",
       "students": [
         {
@@ -40998,12 +40602,9 @@
       ]
     },
     {
-      "name": "Tatsiana",
-      "surname": "Bakhmatovich",
       "fullName": "tatsiana bakhmatovich",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/Tanya-Bakhmatovich",
       "githubUsername": "tanya-bakhmatovich",
       "students": [
         {
@@ -41229,12 +40830,9 @@
       ]
     },
     {
-      "name": "Dzmitry",
-      "surname": "Bahachuk",
       "fullName": "dzmitry bahachuk",
       "city": "Минск",
       "count": 5,
-      "github": "https://github.com/sintet",
       "githubUsername": "sintet",
       "students": [
         {
@@ -41625,12 +41223,9 @@
       ]
     },
     {
-      "name": "Palina",
-      "surname": "Babrounik",
       "fullName": "palina babrounik",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/PolinaBobrovnik",
       "githubUsername": "polinabobrovnik",
       "students": [
         {
@@ -41966,12 +41561,9 @@
       ]
     },
     {
-      "name": "Siarhei",
-      "surname": "Ausianik",
       "fullName": "siarhei ausianik",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/SergeyShatter",
       "githubUsername": "sergeyshatter",
       "students": [
         {
@@ -42197,12 +41789,9 @@
       ]
     },
     {
-      "name": "Aliaksei",
-      "surname": "Astafyeu",
       "fullName": "aliaksei astafyeu",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/tr3v3r",
       "githubUsername": "tr3v3r",
       "students": [
         {
@@ -42538,12 +42127,9 @@
       ]
     },
     {
-      "name": "Uladzimir",
-      "surname": "Artsemenka",
       "fullName": "uladzimir artsemenka",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/vinfinit",
       "githubUsername": "vinfinit",
       "students": [
         {
@@ -42824,12 +42410,9 @@
       ]
     },
     {
-      "name": "Aliaksandr",
-      "surname": "Amialkovich",
       "fullName": "aliaksandr amialkovich",
       "city": "Минск",
       "count": 2,
-      "github": "https://github.com/amelk9n",
       "githubUsername": "amelk9n",
       "students": [
         {
@@ -43055,12 +42638,9 @@
       ]
     },
     {
-      "name": "Dzmitry",
-      "surname": "Aliaksandrau",
       "fullName": "dzmitry aliaksandrau",
       "city": "Минск",
       "count": 4,
-      "github": "https://github.com/alidzm",
       "githubUsername": "alidzm",
       "students": [
         {
@@ -43396,12 +42976,9 @@
       ]
     },
     {
-      "name": "Yuliia",
-      "surname": "Alaieva",
       "fullName": "yuliia alaieva",
       "city": "Минск",
       "count": 3,
-      "github": "https://github.com/JuliaAlaeva",
       "githubUsername": "juliaalaeva",
       "students": [
         {
@@ -43682,12 +43259,9 @@
       ]
     },
     {
-      "name": "Viktoryia",
-      "surname": "Verasava",
       "fullName": "viktoryia verasava",
       "city": "Могилев",
       "count": 3,
-      "github": "https://github.com/ViktoryiaVerasava",
       "githubUsername": "viktoryiaverasava",
       "students": [
         {
@@ -43968,12 +43542,9 @@
       ]
     },
     {
-      "name": "Tatsiana",
-      "surname": "Stsepchanka",
       "fullName": "tatsiana stsepchanka",
       "city": "Могилев",
       "count": 3,
-      "github": "https://github.com/stsepchanka",
       "githubUsername": "stsepchanka",
       "students": [
         {
@@ -44254,12 +43825,9 @@
       ]
     },
     {
-      "name": "Aliaksandr",
-      "surname": "Kazhamiaka",
       "fullName": "aliaksandr kazhamiaka",
       "city": "Могилев",
       "count": 3,
-      "github": "https://github.com/mkinitcpio",
       "githubUsername": "mkinitcpio",
       "students": [
         {
@@ -44540,12 +44108,9 @@
       ]
     },
     {
-      "name": "Maksim",
-      "surname": "Kantsavy",
       "fullName": "maksim kantsavy",
       "city": "Могилев",
       "count": 2,
-      "github": "https://github.com/clainatomi-zero",
       "githubUsername": "clainatomi-zero",
       "students": [
         {
@@ -44771,12 +44336,9 @@
       ]
     },
     {
-      "name": "Aliaksandr",
-      "surname": "Famchankou",
       "fullName": "aliaksandr famchankou",
       "city": "Могилев",
       "count": 3,
-      "github": "https://github.com/famchankou",
       "githubUsername": "famchankou",
       "students": [
         {
