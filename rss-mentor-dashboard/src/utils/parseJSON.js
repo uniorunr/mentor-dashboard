@@ -1,7 +1,3 @@
-import dataJSON from '../../data/data.json';
-
-const data = JSON.parse(JSON.stringify(dataJSON));
-
 const getMentorsList = (datObj) => {
   const list = [];
 
@@ -66,5 +62,5 @@ const getDataByMentor = (mentor, dataObj) => {
 };
 
 export {
-  getMentorsList, getLasksList, getDataByMentor, data,
+  getMentorsList, getLasksList, getDataByMentor,
 };
