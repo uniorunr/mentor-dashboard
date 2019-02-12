@@ -15,12 +15,9 @@ describe('tests for getMentors function', () => {
     expect(mentors).toEqual(
       expect.arrayContaining([
         expect.objectContaining({
-          name: expect.any(String),
-          surname: expect.any(String),
           fullName: expect.any(String),
           city: expect.any(String),
           githubUsername: expect.any(String),
-          github: expect.any(String),
           count: expect.any(Number),
           students: expect.arrayContaining([]),
         }),
@@ -102,12 +99,9 @@ describe('tests for mergePairsAndMentors function', () => {
     expect(data).toEqual(expect.objectContaining({
       mentors: expect.arrayContaining([
         expect.objectContaining({
-          name: expect.any(String),
-          surname: expect.any(String),
           fullName: expect.any(String),
           city: expect.any(String),
           githubUsername: expect.any(String),
-          github: expect.any(String),
           count: expect.any(Number),
           students: expect.arrayContaining([
             expect.objectContaining({
@@ -137,12 +131,9 @@ describe('tests for mergeTasksAndMainDataObject function', () => {
     expect(data).toEqual(expect.objectContaining({
       mentors: expect.arrayContaining([
         expect.objectContaining({
-          name: expect.any(String),
-          surname: expect.any(String),
           fullName: expect.any(String),
           city: expect.any(String),
           githubUsername: expect.any(String),
-          github: expect.any(String),
           count: expect.any(Number),
           students: expect.arrayContaining([
             expect.objectContaining({
@@ -187,12 +178,9 @@ describe('tests for addTaskStatus function', () => {
     expect(data).toEqual(expect.objectContaining({
       mentors: expect.arrayContaining([
         expect.objectContaining({
-          name: expect.any(String),
-          surname: expect.any(String),
           fullName: expect.any(String),
           city: expect.any(String),
           githubUsername: expect.any(String),
-          github: expect.any(String),
           count: expect.any(Number),
           students: expect.arrayContaining([
             expect.objectContaining({

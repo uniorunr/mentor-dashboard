@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<footer
+  className="footer"
+>
+  <div
+    className="footer-wrapper"
+  >
+    <p>
+      Developed with
+      <span
+        aria-label="red heart"
+        className="red-heart"
+        role="img"
+      >
+         ❤️ 
+      </span>
+      by 
+      <a
+        href="test"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        test
+      </a>
+    </p>
+  </div>
+</footer>
+`;
