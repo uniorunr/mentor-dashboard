@@ -57,8 +57,6 @@ describe('tests for getTasks function', () => {
       expect.arrayContaining([
         expect.objectContaining({
           taskName: expect.any(String),
-          normalizedTaskName: expect.any(String),
-          link: expect.any(String),
           status: expect.any(String),
         }),
       ]),
@@ -141,7 +139,6 @@ describe('tests for mergeTasksAndMainDataObject function', () => {
               tasks: expect.arrayContaining([
                 expect.objectContaining({
                   taskName: expect.any(String),
-                  normalizedTaskName: expect.any(String),
                   status: null,
                 }),
               ]),
@@ -152,8 +149,6 @@ describe('tests for mergeTasksAndMainDataObject function', () => {
       tasks: expect.arrayContaining([
         expect.objectContaining({
           taskName: expect.any(String),
-          normalizedTaskName: expect.any(String),
-          link: expect.any(String),
           status: expect.any(String),
         }),
       ]),
@@ -188,7 +183,6 @@ describe('tests for addTaskStatus function', () => {
               tasks: expect.arrayContaining([
                 expect.objectContaining({
                   taskName: expect.any(String),
-                  normalizedTaskName: expect.any(String),
                   status: 'checked',
                 }),
               ]),
@@ -199,8 +193,6 @@ describe('tests for addTaskStatus function', () => {
       tasks: expect.arrayContaining([
         expect.objectContaining({
           taskName: expect.any(String),
-          normalizedTaskName: expect.any(String),
-          link: expect.any(String),
           status: expect.any(String),
         }),
       ]),
