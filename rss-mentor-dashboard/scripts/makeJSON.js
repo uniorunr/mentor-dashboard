@@ -109,14 +109,8 @@ const mergePairsAndMentors = (pairsArray, mentorsArray) => {
 mergePairsAndMentors(pairs, data.mentors);
 
 const getTask = (sheet, currentRow) => {
-  const link = sheet[fieldMapping.tasks.link + currentRow];
   const task = {
     taskName: sheet[fieldMapping.tasks.taskName + currentRow].v,
-    normalizedTaskName: sheet[fieldMapping.tasks.taskName + currentRow].v
-      .trim()
-      .toLowerCase()
-      .replace(/[^a-zA-Z\d\s:]|\s+/gm, ''),
-    link: link ? link.v : 'no link',
     status: sheet[fieldMapping.tasks.status + currentRow].v.trim().toLowerCase(),
   };
 
@@ -146,7 +140,6 @@ const mergeTasksAndMainDataObject = (tasksArray, mainDataObj) => {
       mainDataObj.tasks.forEach((task) => {
         student.tasks.push({
           taskName: task.taskName,
-          normalizedTaskName: task.normalizedTaskName,
           status: null,
         });
       });
@@ -192,7 +185,10 @@ const addTaskStatus = (taskArr, scoreArr, mainDataObj) => {
   const checkedTasks = {};
 
   taskArr.forEach((task) => {
-    checkedTasks[`${task.normalizedTaskName}`] = {
+    checkedTasks[`${task.taskName
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-zA-Z\d\s:]|\s+/gm, '')}`] = {
       students: [],
       mentors: [],
     };
@@ -209,7 +205,10 @@ const addTaskStatus = (taskArr, scoreArr, mainDataObj) => {
   mainDataObj.mentors.forEach((mentor) => {
     mentor.students.forEach((student) => {
       student.tasks.forEach((task) => {
-        if (checkedTasks[`${task.normalizedTaskName}`].students.includes(student.github)) {
+        if (checkedTasks[`${task.taskName
+          .trim()
+          .toLowerCase()
+          .replace(/[^a-zA-Z\d\s:]|\s+/gm, '')}`].students.includes(student.github)) {
           Object.defineProperties(task, {
             status: {
               value: 'checked',
