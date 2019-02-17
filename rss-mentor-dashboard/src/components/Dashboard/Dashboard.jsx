@@ -9,7 +9,9 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { getDataByMentor, getLasksList } from '../../utils/parseJSON';
-import { getFormatOfCell, cellFormatting } from '../../utils/formatting';
+import {
+  getFormatOfCell, cellFormatting, getFormatOfTask, cellFormattingTask,
+} from '../../utils/formatting';
 
 const styles = () => ({
   root: {
@@ -40,7 +42,11 @@ const SimpleTable = (props) => {
           <TableBody>
             {finalData.map(row => (
               <TableRow key={row.task}>
-                <TableCell component="th" scope="row">
+                <TableCell
+                  component="th"
+                  scope="row"
+                  className={cellFormattingTask(getFormatOfTask(row.task, database.tasks))}
+                >
                   {row.task}
                 </TableCell>
                 {studentsList.map((student, i) => (

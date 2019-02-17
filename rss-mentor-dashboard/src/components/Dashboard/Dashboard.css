@@ -4,6 +4,26 @@
   align-items: center;
 }
 
+.cell-bg-green-task {
+  background-color: #b9f6ca70;
+}
+
+.cell-bg-pink-task {
+  background-color: #fce4ec95;
+}
+
+.cell-bg-yellow-task {
+  background-color: #ffff8d70;
+}
+
+.cell-bg-red-task {
+  background-color: #ff8a8070;
+}
+
+.cell-bg-grey-task {
+  background-color: #bdbdbd95;
+}
+
 .cell-bg-green {
   background-color: #b9f6ca;
 }
