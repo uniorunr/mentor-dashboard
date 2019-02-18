@@ -40,7 +40,7 @@ exports[`renders correctly 1`] = `
         >
           <th
             aria-sort={null}
-            className="MuiTableCell-root-37 MuiTableCell-body-39"
+            className="MuiTableCell-root-37 MuiTableCell-body-39 cell-bg-green-task"
             scope="row"
           >
             Test
