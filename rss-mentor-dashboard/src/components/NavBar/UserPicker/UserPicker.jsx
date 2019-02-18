@@ -4,7 +4,7 @@ import 'firebase/auth';
 import Select from 'react-select';
 import PropTypes from 'prop-types';
 import './UserPicker.css';
-import { mentorsList } from '../../../utils/parseJSON';
+import { getMentorsList } from '../../../utils/parseJSON';
 
 const isMentor = (mentor, list) => {
   const mentors = [];
@@ -23,13 +23,23 @@ const customStyles = {
 };
 
 class UserPicker extends Component {
-  state = {
-    selectedOption: null,
-  };
+  constructor(props) {
+    super();
+
+    const { database } = props;
+
+    this.state = {
+      selectedOption: null,
+      mentorsList: getMentorsList(database),
+    };
+  }
 
   componentDidMount = () => {
+    const { mentorsList } = this.state;
+
     firebase.auth().onAuthStateChanged((user) => {
       const mentorFromStorage = localStorage.getItem('selectedMentor');
+
       if (user && isMentor(user.displayName, mentorsList)) {
         this.handleChange({ value: user.displayName, label: user.displayName });
         localStorage.removeItem('selectedMentor');
@@ -49,7 +59,7 @@ class UserPicker extends Component {
   }
 
   render() {
-    const { placeholder, options } = this.props;
+    const { placeholder, database } = this.props;
     const { selectedOption } = this.state;
 
     return (
@@ -60,7 +70,7 @@ class UserPicker extends Component {
           placeholder={placeholder}
           value={selectedOption}
           onChange={this.handleChange}
-          options={options}
+          options={getMentorsList(database)}
           styles={customStyles}
         />
       </Fragment>
@@ -70,13 +80,8 @@ class UserPicker extends Component {
 
 UserPicker.propTypes = {
   placeholder: PropTypes.string.isRequired,
-  options: PropTypes.arrayOf(
-    PropTypes.shape({
-      value: PropTypes.string,
-      label: PropTypes.string,
-    }),
-  ).isRequired,
   handleInput: PropTypes.func.isRequired,
+  database: PropTypes.instanceOf(Object).isRequired,
 };
 
 export default UserPicker;

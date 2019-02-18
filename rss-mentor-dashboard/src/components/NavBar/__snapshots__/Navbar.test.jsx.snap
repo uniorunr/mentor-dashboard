@@ -141,8 +141,14 @@ exports[`renders correctly 1`] = `
         className="MuiButton-label-7"
       >
         <div
-          className="MuiAvatar-root-35 MuiAvatar-colorDefault-36 UserInfo-avatar-1"
-        />
+          className="MuiAvatar-root-35 UserInfo-avatar-1"
+        >
+          <img
+            alt="test"
+            className="MuiAvatar-img-37"
+            src="test"
+          />
+        </div>
       </span>
       <span
         className="MuiTouchRipple-root-38"

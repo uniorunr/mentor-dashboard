@@ -7,6 +7,7 @@ import FireBase from '../../../firebase/firebase';
 const styles = theme => ({
   button: {
     margin: theme.spacing.unit * 2,
+    marginRight: 0,
   },
   input: {
     display: 'none',

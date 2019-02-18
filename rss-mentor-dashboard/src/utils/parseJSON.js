@@ -1,34 +1,38 @@
-import dataJSON from '../../data/data.json';
+const getMentorsList = (datObj) => {
+  const list = [];
 
-const data = JSON.parse(JSON.stringify(dataJSON));
-
-const mentorsList = [];
-
-data.mentors.forEach((element) => {
-  mentorsList.push({ value: element.githubUsername, label: element.githubUsername });
-});
-
-mentorsList.sort((a, b) => {
-  const nameA = a.value;
-  const nameB = b.value;
-  if (nameA < nameB) {
-    return -1;
-  }
-  if (nameA > nameB) {
-    return 1;
-  }
-
-  return 0;
-});
-
-const tasksList = [];
-
-data.tasks.forEach((element) => {
-  tasksList.push({
-    taskName: element.taskName,
-    status: element.status,
+  datObj.mentors.forEach((element) => {
+    list.push({ value: element.githubUsername, label: element.githubUsername });
   });
-});
+
+  list.sort((a, b) => {
+    const nameA = a.value;
+    const nameB = b.value;
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+
+    return 0;
+  });
+
+  return list;
+};
+
+const getLasksList = (dataObj) => {
+  const tasksList = [];
+
+  dataObj.tasks.forEach((element) => {
+    tasksList.push({
+      taskName: element.taskName,
+      status: element.status,
+    });
+  });
+
+  return tasksList;
+};
 
 const getDataByMentor = (mentor, dataObj) => {
   const currMentor = dataObj.mentors.filter(ment => ment.githubUsername === mentor)[0];
@@ -58,5 +62,5 @@ const getDataByMentor = (mentor, dataObj) => {
 };
 
 export {
-  mentorsList, tasksList, getDataByMentor, data,
+  getMentorsList, getLasksList, getDataByMentor,
 };

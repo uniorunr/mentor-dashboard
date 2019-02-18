@@ -29,9 +29,45 @@ const handleInput = (mentorInput) => {
   });
 };
 
+const database = {
+  mentors: [{
+    name: 'Test',
+    surname: 'Test',
+    fullName: 'Test',
+    city: 'Test',
+    count: 0,
+    github: 'https://github.com/test',
+    githubUsername: 'test',
+    students: [{
+      github: 'test',
+      tasks: [{
+        taskName: 'Test',
+        normalizedTaskName: 'task',
+        status: 'checked',
+      },
+      ],
+    }],
+  }],
+  tasks: [{
+    taskName: 'Test',
+    normalizedTaskName: 'task',
+    link: 'https://github.com/test',
+    status: 'checked',
+  }],
+};
+
+const mentorDataObj = {
+  displayName: 'test',
+  photoURL: 'test',
+};
+
 it('renders correctly', () => {
   const tree = renderer
-    .create(<NavBar handleInput={handleInput} />)
+    .create(<NavBar
+      handleInput={handleInput}
+      mentorDataObj={mentorDataObj}
+      database={database}
+    />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
