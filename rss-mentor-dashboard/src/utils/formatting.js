@@ -14,7 +14,7 @@ const getFormatOfTask = (task, tasksArray) => {
     case 'todo':
       cellValue = 'ToDo';
       break;
-    default: cellValue = new TypeError('case not found');
+    default: cellValue = 'ToDo';
   }
   return cellValue;
 };
@@ -37,7 +37,7 @@ const cellFormattingTask = (cellValue) => {
     case 'Checked':
       format = 'cell-bg-red-task';
       break;
-    default: format = new TypeError('case not found');
+    default: format = 'cell-bg-grey-task';
   }
   return format;
 };
@@ -64,7 +64,7 @@ const getFormatOfCell = (score, task, taskStatuses) => {
     case 'todo':
       cellValue = 'ToDo';
       break;
-    default: cellValue = new TypeError('case not found');
+    default: cellValue = 'ToDo';
   }
   return cellValue;
 };
@@ -87,7 +87,7 @@ const cellFormatting = (cellValue) => {
     case 'Checked':
       format = 'cell-bg-red';
       break;
-    default: format = new TypeError('case not found');
+    default: format = 'cell-bg-grey';
   }
   return format;
 };
