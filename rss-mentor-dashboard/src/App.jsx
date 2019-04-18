@@ -15,7 +15,10 @@ class App extends Component {
   constructor() {
     super();
 
-    this.database = firebase.database().ref().child('JSONData');
+    this.database = firebase
+      .database()
+      .ref()
+      .child('JSONData');
 
     this.state = {
       mentor: null,
@@ -45,13 +48,13 @@ class App extends Component {
         database: snap.val(),
       });
     });
-  }
+  };
 
   handleInput = (mentorInput) => {
     this.setState({
       mentor: mentorInput,
     });
-  }
+  };
 
   render() {
     const { mentor, mentorDataObj, database } = this.state;
@@ -62,9 +65,9 @@ class App extends Component {
           mentorDataObj={mentorDataObj}
           database={database}
         />
-        {mentor && database
-          ? <SimpleTable mentor={mentor} database={database} />
-          : null}
+        {mentor && database ? (
+          <SimpleTable mentor={mentor} database={database} />
+        ) : null}
         <Footer link="https://github.com/uniorunr" text="uniorunr" />
       </Fragment>
     );
