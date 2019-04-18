@@ -10,7 +10,10 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { getDataByMentor, getLasksList } from '../../utils/parseJSON';
 import {
-  getFormatOfCell, cellFormatting, getFormatOfTask, cellFormattingTask,
+  getFormatOfCell,
+  cellFormatting,
+  getFormatOfTask,
+  cellFormattingTask,
 } from '../../utils/formatting';
 
 const styles = () => ({
@@ -35,7 +38,9 @@ const SimpleTable = (props) => {
             <TableRow>
               <TableCell>Tasks</TableCell>
               {studentsList.map(student => (
-                <TableCell key={student} align="center">{student}</TableCell>
+                <TableCell key={student} align="center">
+                  {student}
+                </TableCell>
               ))}
             </TableRow>
           </TableHead>
@@ -45,7 +50,9 @@ const SimpleTable = (props) => {
                 <TableCell
                   component="th"
                   scope="row"
-                  className={cellFormattingTask(getFormatOfTask(row.task, database.tasks))}
+                  className={cellFormattingTask(
+                    getFormatOfTask(row.task, database.tasks),
+                  )}
                 >
                   {row.task}
                 </TableCell>
@@ -53,11 +60,19 @@ const SimpleTable = (props) => {
                   <TableCell
                     align="center"
                     key={student}
-                    className={cellFormatting(getFormatOfCell(row[`${studentsList[i]}`],
-                      row.task,
-                      getLasksList(database)))}
+                    className={cellFormatting(
+                      getFormatOfCell(
+                        row[`${studentsList[i]}`],
+                        row.task,
+                        getLasksList(database),
+                      ),
+                    )}
                   >
-                    {getFormatOfCell(row[`${studentsList[i]}`], row.task, getLasksList(database))}
+                    {getFormatOfCell(
+                      row[`${studentsList[i]}`],
+                      row.task,
+                      getLasksList(database),
+                    )}
                   </TableCell>
                 ))}
               </TableRow>

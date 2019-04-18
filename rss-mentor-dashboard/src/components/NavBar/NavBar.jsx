@@ -20,12 +20,14 @@ class NavBar extends Component {
               handleInput={handleInput}
               database={database}
             />
-          ) : <CircularProgress disableShrink />}
+          ) : (
+            <CircularProgress disableShrink />
+          )}
           {mentorDataObj ? (
-            <UserInfo
-              mentorDataObj={mentorDataObj}
-            />
-          ) : <LoginButton />}
+            <UserInfo mentorDataObj={mentorDataObj} />
+          ) : (
+            <LoginButton />
+          )}
         </nav>
       </div>
     );

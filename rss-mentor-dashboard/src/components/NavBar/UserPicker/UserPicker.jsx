@@ -45,18 +45,21 @@ class UserPicker extends Component {
         localStorage.removeItem('selectedMentor');
       } else if (mentorFromStorage) {
         this.setState({
-          selectedOption: { value: mentorFromStorage, label: mentorFromStorage },
+          selectedOption: {
+            value: mentorFromStorage,
+            label: mentorFromStorage,
+          },
         });
       }
     });
-  }
+  };
 
   handleChange = (selectedOption) => {
     const { handleInput } = this.props;
     this.setState({ selectedOption });
     handleInput(selectedOption.label);
     localStorage.setItem('selectedMentor', selectedOption.label);
-  }
+  };
 
   render() {
     const { placeholder, database } = this.props;

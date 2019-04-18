@@ -17,7 +17,7 @@ const styles = theme => ({
 class LoginButton extends Component {
   handleClick = async () => {
     await FireBase.auth();
-  }
+  };
 
   render() {
     const { classes } = this.props;
@@ -26,7 +26,8 @@ class LoginButton extends Component {
         variant="outlined"
         className={classes.button}
         onClick={this.handleClick}
-      >Login
+      >
+        Login
       </Button>
     );
   }
