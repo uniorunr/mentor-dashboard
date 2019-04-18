@@ -14,9 +14,12 @@ exports[`renders correctly 1`] = `
         className="red-heart"
         role="img"
       >
-         ❤️ 
+         
+        ❤️
+         
       </span>
-      by 
+      by
+       
       <a
         href="test"
         rel="noopener noreferrer"
