@@ -23,10 +23,9 @@ const fieldMapping = {
 };
 
 const getNumberOfRows = (sheet) => {
-  const initial = +sheet['!ref']
+  let finalMax = +sheet['!ref']
     .replace('A1', '')
     .replace(/[^0-9.]{1,10}/, '');
-  let finalMax = initial;
   while (!sheet[`A${finalMax}`]) {
     finalMax -= 1;
   }
@@ -38,15 +37,13 @@ const getMentor = (sheet, currentRow) => {
   const surname = sheet[fieldMapping.mentorGithub.surname + currentRow].v;
   const github = sheet[fieldMapping.mentorGithub.github + currentRow].v;
 
-  const mentor = {
+  return {
     fullName: `${name.trim().toLowerCase()} ${surname.trim().toLowerCase()}`,
     city: sheet[fieldMapping.mentorGithub.city + currentRow].v,
     count: sheet[fieldMapping.mentorGithub.count + currentRow].v,
     githubUsername: github.replace(/^.*:\/\/github\.com\//, '').replace('/', '').toLowerCase(),
     students: [],
   };
-
-  return mentor;
 };
 
 const getMentors = (sheet, max) => {
@@ -60,14 +57,10 @@ const getMentors = (sheet, max) => {
   return rows;
 };
 
-const getPair = (sheet, currentRow) => {
-  const pair = {
-    interviewer: sheet[fieldMapping.pairs.interviewer + currentRow].v.trim().toLowerCase(),
-    student: sheet[fieldMapping.pairs.student + currentRow].v,
-  };
-
-  return pair;
-};
+const getPair = (sheet, currentRow) => ({
+  interviewer: sheet[fieldMapping.pairs.interviewer + currentRow].v.trim().toLowerCase(),
+  student: sheet[fieldMapping.pairs.student + currentRow].v,
+});
 
 const getPairs = (sheet, max) => {
   let curRow = 2;
@@ -90,14 +83,10 @@ const mergePairsAndMentors = (pairsArray, mentorsArray) => {
   });
 };
 
-const getTask = (sheet, currentRow) => {
-  const task = {
-    taskName: sheet[fieldMapping.tasks.taskName + currentRow].v,
-    status: sheet[fieldMapping.tasks.status + currentRow].v.trim().toLowerCase(),
-  };
-
-  return task;
-};
+const getTask = (sheet, currentRow) => ({
+  taskName: sheet[fieldMapping.tasks.taskName + currentRow].v,
+  status: sheet[fieldMapping.tasks.status + currentRow].v.trim().toLowerCase(),
+});
 
 const getTasks = (sheet, max) => {
   let curRow = 2;
@@ -132,7 +121,7 @@ const getScore = (sheet, currentRow) => {
   const student = sheet[fieldMapping.score.student + currentRow].v;
   const task = sheet[fieldMapping.score.task + currentRow].v;
 
-  const score = {
+  return {
     task: task.trim().toLowerCase().replace(/[^a-zA-Z\d\s:]|\s+/gm, ''),
     mentor: mentor.trim().replace(/^.*:\/\/github\.com\//, '').replace('/', '').toLowerCase(),
     student: student.trim()
@@ -142,8 +131,6 @@ const getScore = (sheet, currentRow) => {
       .replace(/-20\d{2}\w{1}\d{1}/, '')
       .toLowerCase(),
   };
-
-  return score;
 };
 
 const getScores = (sheet, max) => {
